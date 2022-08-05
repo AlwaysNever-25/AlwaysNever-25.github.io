@@ -1,0 +1,13 @@
+body{
+    background-image: url("bg.jpg");
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+h1, p {
+    color: #f1f1f1
+}
