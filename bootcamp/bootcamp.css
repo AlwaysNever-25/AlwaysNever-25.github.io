@@ -6,7 +6,7 @@ ol.nav {
     background-color: #f1f1f1;
 }
 
-li a[href*="notes"]{
+li a.ver{
     display: inline-flex;
     color: #000;
     padding: 8px 16px;
