@@ -4,9 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS</title>
+    <link rel="stylesheet" href="\bootcamp\css\2.css">
+    <style>
+        h1 {
+            font-size: 40px;
+            color: green;
+        }
+        
+        h1 {
+            color: red;
+        }
+        /* the red would take precedence due to 'cascading' */
+    </style>
 </head>
 <body>
+    <h1>Hello World, I'm learning CSS!</h1>
     
+    <main>
+        <article>
+            <p>What is CSS?</p>
+            <p>Cascading Style Sheet, using </p>
+        </article>
+        <article>
+            <p>CSS is applied in three ways:
+                <ul>
+                    <li>Inline (style immediately inside any element tag)
+                        <ul>
+                        <li>extreme load time, usually not recommended</li>
+                        </ul>
+                    </li>
+                    <li>Internal (<style></style> inside head tag)
+                        <ul>
+                            <li>not recommended because it clutters the HTML file</li>
+                        </ul>
+                    </li>
+                    <li>External (using .css files and call it using <link> tag inside head tag)
+                        <ul>
+                            <li>the recommended use</li>
+                        </ul>
+                    </li>
+                </ul>
+            </p>
+        
+            <p class="fonts">
+                <h1>FONTS</h1>
+
+                Important notes:
+                <ul>
+                    <li><p>Font-family has four inputs for alternate uses. The fonts used, and alternate variants. These alternate variants can either be family-name (Arial, Helvetica) or generic-family (serif, sans-serif)</p></li>
+                </ul>
+            </p>
+        </article>
+        
+        <form action="\bootcamp\index.html">
+            <input type="submit" value="Back" />
+        </form>
+    </main>
 </body>
 </html>
