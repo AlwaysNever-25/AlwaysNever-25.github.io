@@ -24,7 +24,57 @@
     <main>
         <article>
             <p>What is CSS?</p>
-            <p>Cascading Style Sheet, using </p>
+            <p>Cascading Style Sheet</p>
+            <p>Used to style on the content already tagged in HTML</p>
+            <p>How to write with CSS:</p>
+            <pre>
+                <code>Selector { 
+                    property1: value; 
+                    property2: value; 
+                }
+                </code>
+            </pre>
+            <ul>
+                <li>Selector</li>
+                <ul>
+                    <li>Which element/class/id that CSS will affect</li>
+                    <li>Examples for element: 
+                        <pre>
+                            <code>body {
+                                property1: value;
+                            }
+                            </code>
+                        </pre>
+                    </li>
+                    <li>Examples for class:
+                        <pre>
+                            <code>.classname {
+                                property1: value;
+                            }
+                            </code>
+                        </pre>
+                    </li>
+                    <li>Examples for id:
+                        <pre>
+                            <code>#idname {
+                                property1: value;
+                            }
+                        </code>
+                        </pre>
+                    </li>
+                </ul>
+                <li>Property</li>
+                <ul>
+                    <li>Which property that you want to affect</li>
+                    <li>Examples: fonts, display, background-color</li>
+                </ul>
+                <li>Value</li>
+                <ul>
+                    <li>Values that you want for the property</li>
+                    <li>Each property has different types of values, and so there is no general example</li>
+                    <li>Most of the properties, however, share the same values of <i>inherit</i> and <i>initial</i></li>
+                </ul>
+            </ul>
         </article>
         <article>
             <p>CSS is applied in three ways:
@@ -47,14 +97,91 @@
                 </ul>
             </p>
         
-            <p class="fonts">
+            <article class="fonts">
                 <h1>FONTS</h1>
+                <p>Properties to style and design fonts of a website.</p>
 
-                Important notes:
-                <ul>
-                    <li><p>Font-family has four inputs for alternate uses. The fonts used, and alternate variants. These alternate variants can either be family-name (Arial, Helvetica) or generic-family (serif, sans-serif)</p></li>
+                <p id="important">Important notes:</p>
+                <ul id="list">
+                    <li>
+                        <p>Fonts can be configured using a shorthand property <i>fonts</i>. When used that way, the font-family and font-size are required.</p>
+                    </li>
+                    <li>
+                        <p>Font-family has four inputs for alternate uses. The fonts used, and alternate variants. These alternate variants can either be family-name (Arial, Helvetica) or generic-family (serif, sans-serif)</p>
+                    </li>
+                    <li>
+                        <p>Font-size can alter the size of a font, from extra-extra small (xx-small) to extra-extra large (xx-large). It can also be set to a certain length (px, cm, mm, in, pt) or set according to a percentage of parent's element font size using %. It can also be generally set as smaller or larger than parents elements with <i>smaller</i> or <i>larger</i> value.</p>
+                    </li>
+                    <li>
+                        <p>Font-weight can change how bold a font would be. You can use certain value like normal, bold, bolder, or lighter. You can also use a number ranging from 100 (very thin) to 900 (bolder than bold).</p>
+                    </li>
+                    <li>
+                        <p>Font-variant can be used to set the font using a small-caps font. The example of this can be seen above, below the FONTS header.</p>
+                    </li>
+                    <li>
+                        <p>Font-style is used to set the font using an italic style or an oblique style.</p>
+                    </li>
                 </ul>
-            </p>
+            </article>
+
+            <article class="text">
+                <h1>TEXT</h1>
+                <p>Properties to style the text of a website. Difference from font is that this arrange color, alignments, indentation and such.</p>
+
+                <p>Important notes:</p>
+                <ul>
+                    <li>
+                        <p>Color property pretty much give colors to a text.</p>
+                        <p id="green">Like</p><p id="red">this!</p>
+                    </li>
+                    <li>
+                        <p>Text-align can align your text, default is left as per the usual. Center, right, or even justify.</p>
+                    </li>
+                    <li>
+                        <p>Text-indent can give indentation towards a text. Value can be percentage or in length units (px, pt, cm, em, etc)</p>
+                    </li>
+                    <li>
+                        <p>Text-decoration is a catch-all property to style your text. It can make it underlined or strikethrough, and you can even control how the style would look color wise, thickness wise, or style-wise (dotted lines, wavy lines, and such)</p>
+                        <p id="underline">This is underlined.</p>
+                        <p id="wavy-underline">This is <i>wavy</i> underlined.</p>
+                        <p id="dotted-underline">This is <b>dotted</b> underlined.</p>
+                        <p id="thick-dotted-overline">This is thick-dotted overlined.</p>
+                        <p id="wavy-strikethrough">This is <i>wavy</i> strikethroughed.</p>
+                    </li>
+                    <li>
+                        <p>Text-transform can transform a text to either capitalize it, make it all uppercase, or lowercase.</p>
+                    </li>
+                    <li>
+                        <p>Letter-spacing modify the space between the letters.</p>
+                    </li>
+                    <li>
+                        <p>Word-spacing modify the space between.... <i>words</i>. Yeah, go figure.</p>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="background">
+                <h1 id="background">Background</h1>
+                <p>Properties that controls background of an element. Nuff said.</p>
+
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="display">
+                <h1>Display</h1>
+                <p>Properties that modify how an element would be displayed. It can also straight up <div id="vanish">vanish</div> things!</p>
+
+                <ul>
+                    <li>
+                        <p></p>
+                    </li>
+                </ul>
+            </article>
+
         </article>
         
         <form action="\bootcamp\index.html">
