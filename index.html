@@ -1,53 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Al's Project.io</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Al's Project.io</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="/testquery.js"></script>
+  <link rel="stylesheet" href="testquery.css">
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="whatisthis/notindex.html">Stickverse</a></li>
-            <li><a href="bootcamp/index.html">Bootcamp</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
-
-    <main>
-
-        <div class="container">
-            <div class="content" id="content-0">
-                <p>Content</p>
+    <div id="portal_slider" class="portal_container">
+        <div class="portal_body">
+            <div id="portal_nav" style="display: none;">
+              <ul>
+                <li><a href="#portal_content-0"></a></li>
+                <li></a></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li><a href="about.html"></a></li>
+              </ul>
+            </div>
+            <div id="portal_content-0" class="portal_content">
+              <div id="portal_slide-0" class="portal_main">
+                <div class="portal_body">
+                  <div class="portal_sliderlink portal_sliderlink-1"><img src="/images/preview.jpg"></img>
+                    <div class="portal_slidertext"><a href="index2.html">Al's Project</a></div>
+                  </div>
+                  <div class="portal_sliderlink portal_sliderlink-2">
+                    <div class="portal_slidertext"><a href="index2.html">Home</a></div>
+                  </div>
+                  <div class="portal_sliderlink portal_sliderlink-3">
+                    <div class="portal_slidertext"><a href="/whatisthis/notindex.html">Stickverse</a></div>
+                  </div>
+                  <div class="portal_sliderlink portal_sliderlink-4">
+                    <div class="portal_slidertext"><a href="/bootcamp/index.html">Bootcamp</a></div>
+                  </div>
+                  <div class="portal_sliderlink portal_sliderlink-5">
+                    <div class="portal_slidertext"><a href="about.html">About</a></div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
-
-        <div class="content-container">
-            <div class="content" id="content-1">
-                <p>Content</p>
-            </div>
-            <div class="content" id="content-2">
-                 <p>Content</p>
-            </div>
-        </div>
-
-        <div class="content-container">
-            <div class="content" id="content-3">
-                <p>Content</p>
-            </div>
-            <div class="content" id="content-4">
-                <p>Content</p>
-            </div>
-            <div class="content" id="content-5">
-                <p>Content</p>
-            </div>
-            <div class="content" id="content-6">
-                <p>Content</p>
-            </div>
-        </div>
-    </main>
-    
+    </div>
 </body>
 </html>
