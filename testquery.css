@@ -1,5 +1,5 @@
 /*******************************************
-                jQuery Slider
+                jQuery Slider CSS
  *******************************************/
 /**
  * Based on CSS for "Template:Slider generator"
@@ -8,6 +8,9 @@
  * reused and repurposed for this website by AlwaysNever
  */
 
+body {
+    background-color: #447fdb;
+}
 /* container and common settings */
 .portal_container {
     max-width: 860px;
