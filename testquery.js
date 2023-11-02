@@ -7,7 +7,7 @@ $(document).ready(function(){
       });
 
     $(".portal_sliderlink-4").on("click", function() { // binding click event
-        window.location = "/bootcamp/index.html";
+        window.location = "/fcreviews/fcreviews.html";
       });
     
     $(".portal_sliderlink-5").on("click", function() { // binding click event
