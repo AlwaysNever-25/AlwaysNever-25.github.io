@@ -1,12 +1,12 @@
 # AlwaysNever-25.github.io
 ## What is this repo?
-Basically my portfolio website. Also containing a story made in Stickverse, adapting the origin of the world, at least a version of it.
+Basically website where I put my stuff in. Also containing unfinished stories made in Stickverse, something I made that was dated pre-MCU (but not pre-comic book).
 
 ## What is a Stickverse?
-A universe that I made up, consisting of characters and worlds that I have made up for the last decade, almost.
+A universe that I made up, consisting of characters and worlds that I have made up in the last decade, almost.
 
-## What kind of project are you aiming to do?
-I would love to make an interactive fiction game based only on HTML, CSS and JavaScript. Mockups of website design that I can use later perhaps for a family business. Maybe do a blog, or release snippets of the master list of characters I made in Stickverse.
+## What is Contracts Review?
+Review I made regarding anime/manga/game during the Contracts event in the Anicord Event Server. They used to be put on google docs, but now they're available in a more unique format, with perhaps more unique experience.
 
-## I read about you diving into Wikia-now-Fandom, why are you so obsessed?
-Shut up.
+## Do you have a job?
+Obviously not, otherwise I'd be out there doing something more worthwhile.
