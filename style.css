@@ -63,7 +63,7 @@ li.dropdown {
 }
 
 .content {
-    border:3px solid #fada5a; 
+    border:3px solid; 
     border-radius: 5px;
     background-color: transparent;  
     border-spacing: 4px; 
@@ -78,37 +78,31 @@ li.dropdown {
 #content-1 {
     width: 50%;
     margin: 5px;
-    color: red;
 }
 
 #content-2 {
     width: 50%;
     margin: 5px;
-    color: blue;
 }
 
 #content-3 {
     width: 25%;
     margin: 5px;
-    color: aqua;
 }
 
 #content-4 {
     width: 25%;
     margin: 5px;
-    color: pink;
 }
 
 #content-5 {
     width: 25%;
     margin: 5px;
-    color: beige;
 }
 
 #content-6 {
     width: 25%;
     margin: 5px;
-    color: lime;
 }
 
 .container {
