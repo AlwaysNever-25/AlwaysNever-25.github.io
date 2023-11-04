@@ -2,3 +2,8 @@ body{
     margin: 20px;
     background-color: gray;
 }
+
+.ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+}
