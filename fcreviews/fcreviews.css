@@ -1,29 +1,47 @@
 body{
-    margin: 20px auto;
+    margin: 20px;
     background-color: gray;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .review-title {
     color: blue;
     text-align: center;
     text-shadow: 1px 1px #000;
-    font-family: 'Montserrat', sans-serif;
+}
+
+.review{
+    text-decoration: none;
 }
 
 .review1{
-    text-decoration: none;
     color:azure;
 }
 
 .review2{
-    text-decoration: none;
-    color:darkorchid;
+    color:red;
 }
 
 .review3{
-    text-decoration: none;
+    color: gold;
 }
 
 .review4{
-    text-decoration: none;
+    color: yellow;
+}
+
+.review5{
+    color: peachpuff;
+}
+
+.review6{
+    color: pink;
+}
+
+.review7{
+    color: yellowgreen;
+}
+
+.review8{
+    color: lightskyblue;
 }
