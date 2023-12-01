@@ -7,3 +7,57 @@ body{
     display: inline-block;
     line-height: 1em;
 }
+
+.pos{
+    position: absolute;
+}
+
+.pos1{
+    left: 99px;
+    top: 25px;
+}
+
+.pos2{
+    right: 76px;
+    top: 11px;
+}
+
+.pos3{
+    left: 175px;
+    top: 38px;
+}
+
+.pos4{
+    left: 35px;
+    top: 65px;
+}
+
+.pos5{
+    left: 92px;
+    top: 92px;
+}
+
+.pos6{
+    right: 192px;
+    top: 60px;
+}
+
+.pos7{
+    right: 62px;
+    top: 50px;
+}
+
+.pos8{
+    right: 20px;
+    top: 92px;
+}
+
+.pos9{
+    right: 92px;
+    top: 92px;
+}
+
+.pos10{
+    right: 52px;
+    top: 32px;
+}
