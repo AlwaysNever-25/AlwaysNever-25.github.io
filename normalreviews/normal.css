@@ -1,0 +1,64 @@
+body{
+    margin: 20px;
+    background-color: gray;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.review-title {
+    color: blue;
+    text-align: center;
+    text-shadow: 1px 1px #000;
+}
+
+.review{
+    text-decoration: none;
+}
+
+.review1{
+    color:gold;
+}
+
+.review2{
+    color:crimson;
+}
+
+.review2-1{
+    color:white;
+}
+
+.review3{
+    color: orange;
+}
+
+.review4{
+    color: yellow;
+}
+
+.review5{
+    color: peachpuff;
+}
+
+.review6{
+    color: pink;
+}
+
+.review7{
+    color: yellowgreen;
+}
+
+.review8{
+    color: lightskyblue;
+}
+
+.review9{
+    color: lime;
+}
+
+.review10 {
+    color: lightblue;
+}
+
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
