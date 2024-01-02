@@ -40,7 +40,7 @@ anime.timeline({loop: true})
 var textWrapper2 = document.querySelector('.ml12');
 textWrapper2.innerHTML = textWrapper2.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-anime.timeline({loop: true})
+anime.timeline({loop: false})
   .add({
     targets: '.ml12 .letter',
     translateX: [40,0],
@@ -49,11 +49,4 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     duration: 1200,
     delay: (el, i) => 500 + 30 * i
-  }).add({
-    targets: '.ml12 .letter',
-    translateX: [0,-30],
-    opacity: [1,0],
-    easing: "easeInExpo",
-    duration: 1100,
-    delay: (el, i) => 100 + 30 * i
   });

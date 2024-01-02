@@ -1,56 +1,154 @@
 body{
     margin: 20px;
-    background-color: gray;
+    color:#f0f0f0;
+    background-color: black;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .review-title {
-    color: blue;
-    text-align: center;
     text-shadow: 1px 1px #000;
 }
 
 .review{
-    text-decoration: none;
+    display: grid;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.review-2{
+    display: grid;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.season-title {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.season-title-2 {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+
+.card1{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+}
+
+.card2{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 10px;
+}
+
+.card3{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    padding: 10px;
+}
+
+.card4{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px;
+}
+
+.card5{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 4;
+    grid-column-end: 7;
+    padding: 10px;
+}
+
+.card6{
+    border: 1px solid #f0f0f0;
+    grid-row: 3 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+}
+
+.card7{
+    border: 1px solid #f0f0f0;
+    grid-row: 3 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 10px;
+}
+
+.card8{
+    border: 1px solid #f0f0f0;
+    grid-row: 3 3;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    padding: 10px;
 }
 
 .review1{
+    text-decoration: none;
     color:azure;
 }
 
 .review2{
+    text-decoration: none;
     color:red;
 }
 
 .review3{
+    text-decoration: none;
     color: gold;
 }
 
 .review4{
+    text-decoration: none;
     color: yellow;
 }
 
 .review5{
+    text-decoration: none;
     color: peachpuff;
 }
 
 .review6{
+    text-decoration: none;
     color: pink;
 }
 
 .review7{
+    text-decoration: none;
     color: yellowgreen;
 }
 
 .review8{
+    text-decoration: none;
     color: lightskyblue;
 }
 
 .review9{
+    text-decoration: none;
     color: lime;
 }
 
 .review10 {
+    text-decoration: none;
     color: lightblue;
 }
 
