@@ -1,8 +1,9 @@
 body{
     margin: 20px;
     background-color: black;
-    color:white;
+    color:#e6e6e6;
     font-family: 'Montserrat', sans-serif;
+    text-align: center;
 }
 
 .review-title {
@@ -12,10 +13,40 @@ body{
 }
 
 .review{
-    text-decoration: none;
+    color: #f0f0f0;
 }
 
-.review1{
+.review-grid{
+    display: grid;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.title-grid {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.card1{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+}
+
+.card2{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 10px;
+}
+
+/*.review1{
     background: -webkit-linear-gradient(90deg, rgba(255,215,0,1) 0%, rgba(255,255,255,0.5) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -69,7 +100,7 @@ body{
 
 .review10{
     color: gray;
-}
+}*/
 
 .ml3 {
     font-weight: 900;
