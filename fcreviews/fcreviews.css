@@ -156,3 +156,8 @@ body{
     font-weight: 900;
     font-size: 3.5em;
 }
+
+.date{
+    text-align: right;
+    font-size: small;
+}

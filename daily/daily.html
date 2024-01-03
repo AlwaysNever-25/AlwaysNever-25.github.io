@@ -8,6 +8,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        const desiredRepo = "AlwaysNever-25.github.io";
+        const dateTagClass = ".date"; // The HTML element you want to update
+        const monthList = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function()
+        {
+        if (this.readyState == 4 && this.status == 200)
+        {
+            let repos = JSON.parse(this.responseText);
+
+            repos.forEach((repo)=>{
+            if (repo.name == desiredRepo)
+            {
+                var lastUpdated = new Date(repo.pushed_at);
+                var day = lastUpdated.getUTCDate();
+                var month = lastUpdated.getUTCMonth();
+                var year = lastUpdated.getUTCFullYear();
+                var hour = lastUpdated.getUTCHours();
+                var minutes = lastUpdated.getUTCMinutes();
+                let monthText = monthList[month]
+                $(dateTagClass).text(`Last updated: ${hour}:${minutes} UTC, ${monthText} ${day}, ${year}`);
+            }
+            });
+        }
+        };
+        xhttp.open("GET", "https://api.github.com/users/alwaysnever-25/repos", true);
+        xhttp.send();
+    </script>
 </head>
 <body>
     <hgroup>
@@ -29,12 +60,16 @@
     <pre>
     Base Contract : 500XP (First 60 chapters)
     Staff Contract : 700XP (Season 1)
-    Overachiever (Base) : 50XP (next 60 chapters) + 50XP (next 60 chapters, currently it's 180 chapters)
-    Overachiever (Staff) : 50XP (Season 2) + 50XP (Season 3) + 50XP? (Movie? not sure about this)
+    Overachiever (Base) : 50XP (next 60 chapters) + 50XP (next 60 chapters, 
+    currently it's 180 chapters)
+    Overachiever (Staff) : 50XP (Season 2) + 50XP (Season 3) + 50XP? (Movie? 
+    not sure about this)
     
     Bounties:
-    S-Rank (Darkest Dungeon) : 1000XP (main objective) + 250XP (additional objective)
-    C-Rank (Rise of Tomb Raider) : 550XP (main objective) + 250XP (additional objective)
+    S-Rank (Darkest Dungeon) : 1000XP (main objective) + 250XP (additional 
+    objective)
+    C-Rank (Rise of Tomb Raider) : 550XP (main objective) + 250XP (additional 
+    objective)
     D-Rank (The Letter) : 400XP (main objective)
     E-Rank (Magus of the Library) : 100XP (main objective)
     
@@ -69,46 +104,22 @@
         >Imouto sae Ireba Ii (3/14)
         >Defiant
         >Hero of Ages (reread)
-        >Alloy of Law, Shadows of Self, Bands of Mourning, The Lost Metal (reread, preferrably all immediately after the other)
+        >Alloy of Law, Shadows of Self, Bands of Mourning, The Lost Metal 
+        (reread, preferrably all immediately after the other)
         >The Sunlit Man
     </pre>
 
     <p>There's also this bubbling idea of taking every single beer mentions from <i>Imosae</i> and their pic and their in-novel description in comparison to that.</p> 
     
-    <p>Or an idea to put in timestamp to the last time a page in this website is updated. This requires me to tinker with AJAX, which seems simple... let's see if this works</p>
+    <p>Or an idea to put in timestamp to the last time a page in this website is updated. This requires me to tinker with AJAX, which seems simple... let's see if this works. (Update, it works!)</p>
 
     <p>But I have too many ideas.</p>
 
     <p>This project is already one of my many ideas, I'm not even sure this'll last until halfway through the year, but I'll try to keep up. The goal for this project is to not do it daily, but doing it as much as I am comfortable.</p>
+
+    <p>Last minute update: someone bought me <i>Watanagashi</i>, the second episode of the visual novel <i>Higurashi no Naku Koro Ni</i>, so my plans for all these are out of the window for now. I'll just read them, along with the first episode <i>Onikakushi</i> (which I have read before, but I will read again for posterity). This might help my heart handle <i>The Letter</i>, perhaps, since this visual novel is... <i>scary</i>.</p>
     </hgroup>
 
     <div class="date"></div>
-
-    <script>
-        const desiredRepo = "alwaysnever-25.github.io";
-        const dateTagClass = ".date"; // The HTML element you want to update
-
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function()
-        {
-        if (this.readyState == 4 && this.status == 200)
-        {
-            let repos = JSON.parse(this.responseText);
-
-            repos.forEach((repo)=>{
-            if (repo.name == desiredRepo)
-            {
-                var lastUpdated = new Date(repo.updated_at);
-                var day = lastUpdated.getUTCDate();
-                var month = lastUpdated.getUTCMonth();
-                var year = lastUpdated.getUTCFullYear();
-                $(dateTagClass).text(`Last updated: ${year}-${month}-${day}`);
-            }
-            });
-        }
-        };
-        xhttp.open("GET", "https://api.github.com/users/alwaysnever-25/repos", true);
-        xhttp.send();
-    </script>
 </body>
 </html>
