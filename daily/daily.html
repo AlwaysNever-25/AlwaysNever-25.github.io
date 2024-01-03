@@ -45,5 +45,70 @@
     (or 3450XP if Movies not count and I don't finish additional objectives)
     </pre>
     </hgroup>
+
+    <hgroup>
+    <h2>Day 3 (January 3rd, 2024)</h2>
+    <p>Had to help my sister fix a tablet today. I did leave yesterday too, but I don't feel like saying it in the entry. Now I have to, since this makes it two days in a row where I have to go out.</p>
+
+    <p>I'm also feeling a bit low energy, might be sick.</p>
+
+    <p>Also I tried reading <i>Fate/strange fake</i>, but realized that this is something I can only read after... reading all these.</p>
+    <pre>
+        >Fate/stay night (Fate, Unlimited Blade Works, Heaven's Feel)
+        >Fate/Zero
+        >The Case Files of Lord El-Melloi II
+        >Fate/Grand Order (up to Babylonia of Arc 1)
+        >Tsuhikime Remake
+    </pre>
+
+    <p>Safe to say, this novel will be unread for a <i>long</i> time.</p>
+
+    <p>This novel isn't supposed to be something I read first anyway. There's <i>Imouto sae Ireba Ii</i> (or <i>Imosae</i>) light novel series with deadline of day 116 (April 25th, 2024), and my ever growing backlog of Brandon Sanderson's novels. <i>Defiant</i>, reread of <i>Mistborn</i> from Era 1 up to the newest <i>The Lost Metal</i>, and <i>The Sunlit Man</i>... let me make another list.</p>
+
+    <pre>
+        >Imouto sae Ireba Ii (3/14)
+        >Defiant
+        >Hero of Ages (reread)
+        >Alloy of Law, Shadows of Self, Bands of Mourning, The Lost Metal (reread, preferrably all immediately after the other)
+        >The Sunlit Man
+    </pre>
+
+    <p>There's also this bubbling idea of taking every single beer mentions from <i>Imosae</i> and their pic and their in-novel description in comparison to that.</p> 
+    
+    <p>Or an idea to put in timestamp to the last time a page in this website is updated. This requires me to tinker with AJAX, which seems simple... let's see if this works</p>
+
+    <p>But I have too many ideas.</p>
+
+    <p>This project is already one of my many ideas, I'm not even sure this'll last until halfway through the year, but I'll try to keep up. The goal for this project is to not do it daily, but doing it as much as I am comfortable.</p>
+    </hgroup>
+
+    <div class="date"></div>
+
+    <script>
+        const desiredRepo = "alwaysnever-25.github.io";
+        const dateTagClass = ".date"; // The HTML element you want to update
+
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function()
+        {
+        if (this.readyState == 4 && this.status == 200)
+        {
+            let repos = JSON.parse(this.responseText);
+
+            repos.forEach((repo)=>{
+            if (repo.name == desiredRepo)
+            {
+                var lastUpdated = new Date(repo.updated_at);
+                var day = lastUpdated.getUTCDate();
+                var month = lastUpdated.getUTCMonth();
+                var year = lastUpdated.getUTCFullYear();
+                $(dateTagClass).text(`Last updated: ${year}-${month}-${day}`);
+            }
+            });
+        }
+        };
+        xhttp.open("GET", "https://api.github.com/users/alwaysnever-25/repos", true);
+        xhttp.send();
+    </script>
 </body>
 </html>

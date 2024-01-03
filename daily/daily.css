@@ -4,3 +4,8 @@ body{
     background-color: black;
     font-family: 'Montserrat', sans-serif;
 }
+
+.date{
+    text-align: right;
+    font-size: small;
+}
