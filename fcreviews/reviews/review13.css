@@ -1,0 +1,38 @@
+.hidden{
+    opacity: 0;
+}
+
+.part1{
+    animation: appears 2s forwards;
+}
+
+.part2{
+    animation: appears 2s 4s forwards;
+}
+
+.part3{
+    animation: appears 2s 7s forwards;
+}
+
+.part4{
+    animation: appears 2s 10s forwards;
+}
+
+.part5{
+    animation: appears 2s 13s forwards;
+}
+
+.part6{
+    animation: appears 2s 16s forwards;
+}
+
+.part7{
+    animation: appears 2s 20s forwards;
+}
+
+/* animation: name duration timing-function delay iteration-count direction fill-mode;*/
+
+@keyframes appears {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
