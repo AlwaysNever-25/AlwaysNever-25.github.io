@@ -190,3 +190,43 @@ li.dropdown {
     padding: 10px;
     text-align: center;
 }
+
+@media only screen and (max-width: 685px) {
+    .review-grid{
+        display: grid;
+        border: 1px solid #000000;
+        padding: 5px;
+        gap: 5px;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .card1{
+        border: 1px solid #000000;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .card2{
+        border: 1px solid #000000;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding: 5px;
+        text-align: center;
+    }
+    
+    .card3{
+        border: 1px solid #000000;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        padding: 5px;
+        text-align: center;
+    }
+  }
+
+@media only screen and (max-width:5000px){
+    body{
+        padding: 100px;
+    }
+}
