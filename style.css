@@ -167,6 +167,13 @@ li.dropdown {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.title-grid{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    text-align: center;
+    font-size: 150%;
+}
+
 .card1{
     border: 1px solid #000000;
     grid-column-start: 1;
