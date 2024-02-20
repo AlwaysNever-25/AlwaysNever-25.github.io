@@ -191,6 +191,17 @@ li.dropdown {
     text-align: center;
 }
 
+.beer-title{
+    font-size: 200%;
+    font-weight: bold;
+    margin: 0 auto;
+}
+
+.beer-subtitle{
+    font-size: 75%;
+    margin: 0 auto;
+}
+
 @media only screen and (max-width: 685px) {
     .review-grid{
         display: grid;
@@ -227,6 +238,7 @@ li.dropdown {
 
 @media only screen and (max-width:5000px){
     body{
-        padding: 100px;
+        margin: 100px;
+        padding: 50px;
     }
 }
