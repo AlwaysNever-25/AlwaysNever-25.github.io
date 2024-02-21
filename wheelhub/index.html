@@ -6,6 +6,55 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>Form Biodata</h1>
+    <form action="/index.html" method="post">
+        <label for="namadepan">Nama Depan</label>
+        <br>
+        <input type="text" name="namadepan" id="namadepan" placeholder="Input nama depan...">
+        <br>
+        <br>
+        <label for="namabelakang">Nama Belakang</label>
+        <br>
+        <input type="text" name="namabelakang" id="namabelakang" placeholder="Input nama belakang...">
+        <br>
+        <br>
+        <label for="umur">Umur</label>
+        <br>
+        <input type="number" name="umur" id="umur" min="17">
+        <br>
+        <br>
+        <label for="jenis-kelamin">Nama Jenis Kelamin</label>
+        <br>
+        <input type="radio" name="jenis-kelamin" id="laki-laki"> <label for="laki-laki">Laki-Laki</label>
+        <input type="radio" name="jenis-kelamin" id="perempuan"> <label for="perempuan">Perempuan</label>
+        <br>
+        <br>
+        <label for="tanggal-lahir">Tanggal Lahir</label>
+        <br>
+        <input type="date" name="tanggal-lahir" id="tanggal-lahir">
+        <br>
+        <br>
+        <label for="deskripsi">Deskripsi</label>
+        <br>
+        <textarea name="deskripsi" id="deskripsi" cols="30" rows="10" placeholder="Input deskripsi..."></textarea>
+        <br>
+        <br>
+        <label for="username">Username</label>
+        <br>
+        <input type="text" name="username" id="username" placeholder="Input username..." readonly maxlength="10">
+        <br>
+        <br>
+        <label for="email">Email</label>
+        <br>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" name="password" id="password" required>
+        <br>
+        <br>
+        <input type="submit" onclick="alert('Apakah anda ingin submit?')" value="Submit">
+    </form>
 </body>
 </html>
