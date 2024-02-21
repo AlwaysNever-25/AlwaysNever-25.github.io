@@ -64,44 +64,6 @@ body{
     padding: 10px;
 }
 
-.card4{
-    border: 1px solid #f0f0f0;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    padding: 10px;
-}
-
-.card5{
-    border: 1px solid #f0f0f0;
-    grid-column-start: 4;
-    grid-column-end: 7;
-    padding: 10px;
-}
-
-.card6{
-    border: 1px solid #f0f0f0;
-    grid-row: 3 3;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    padding: 10px;
-}
-
-.card7{
-    border: 1px solid #f0f0f0;
-    grid-row: 3 3;
-    grid-column-start: 3;
-    grid-column-end: 5;
-    padding: 10px;
-}
-
-.card8{
-    border: 1px solid #f0f0f0;
-    grid-row: 3 3;
-    grid-column-start: 5;
-    grid-column-end: 7;
-    padding: 10px;
-}
-
 .review1{
     text-decoration: none;
     color:azure;
@@ -160,4 +122,34 @@ body{
 .date{
     text-align: right;
     font-size: small;
+}
+
+@media only screen and (max-width: 850px) {
+    .card1{
+        border: 1px solid #f0f0f0;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        padding: 10px;
+    }
+    
+    .card2{
+        border: 1px solid #f0f0f0;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        padding: 10px;
+    }
+    
+    .card3{
+        border: 1px solid #f0f0f0;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        padding: 10px;
+    }
+  }
+
+@media only screen and (max-width:5000px){
+    body{
+        margin: 100px;
+        padding: 50px;
+    }
 }
