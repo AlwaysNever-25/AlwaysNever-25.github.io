@@ -62,3 +62,8 @@ body{
     right: 52px;
     top: 32px;
 }
+
+.date{
+    text-align: right;
+    font-size: small;
+}

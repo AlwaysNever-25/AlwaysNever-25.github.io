@@ -249,3 +249,8 @@ li.dropdown {
         padding: 50px;
     }
 }
+
+.date{
+    text-align: right;
+    font-size: small;
+}
