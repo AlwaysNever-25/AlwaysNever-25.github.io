@@ -1,6 +1,9 @@
 $(document).ready(function(){
+    $(".portal_sliderlink-1").on("click", function() { // binding click event
+      window.location = "index.html";
+    });
     $(".portal_sliderlink-2").on("click", function() { // binding click event
-        window.location = "index.html";
+        window.location = "beer.html";
       });
     $(".portal_sliderlink-3").on("click", function() { // binding click event
         window.location = "/whatisthis/notindex.html";
