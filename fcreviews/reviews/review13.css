@@ -30,6 +30,10 @@
     animation: appears 2s 20s forwards;
 }
 
+.part8{
+    animation: appears 2s 40s forwards;
+}
+
 /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
 
 @keyframes appears {
