@@ -1,3 +1,23 @@
+.paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.center{
+    text-align: center;
+}
+
+.column{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.images{
+    padding: 10px;
+}
+
 .hidden{
     opacity: 0;
 }
@@ -32,6 +52,14 @@
 
 .part8{
     animation: appears 2s 40s forwards;
+}
+
+.part9{
+    animation: appears 2s 60s forwards;
+}
+
+.part10{
+    animation: appears 2s 80s forwards;
 }
 
 /* animation: name duration timing-function delay iteration-count direction fill-mode;*/
