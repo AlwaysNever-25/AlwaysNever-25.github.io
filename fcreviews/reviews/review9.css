@@ -2,8 +2,17 @@ body{
     background-color: black;
     color: #e6e6e6;
     margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a{
+    color: #e6e6e6;
 }
 
 #table-of-contents{
-    border: 5px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid white;
+    padding: 10px;
+    width: 35%;
 }
