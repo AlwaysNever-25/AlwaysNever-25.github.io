@@ -1,13 +1,22 @@
+@font-face {
+    font-family: "Aileron-Light";
+    src: url(/fonts/Aileron-Light.otf);
+}
+
 body{
-    background-image: url("/images/bg.jpg");
-    background-color: #cccccc;
-    height: 500px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #000;
     position: relative;
+    font-family: "Aileron-Light";
+    padding: 20px;
 }
 
 h1, p {
     color: #f1f1f1
 }
+
+input{
+    font-family: "Aileron-Light";
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 4px;
+  }
