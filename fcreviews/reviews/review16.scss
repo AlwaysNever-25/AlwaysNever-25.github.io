@@ -1,0 +1,43 @@
+@import 'typed';
+
+main {
+  display: grid;
+  height: 10vh;
+  place-items: center;
+  width: 100%;
+}
+ 
+.input-wrapper {
+  display: block;
+  font-family: monospace;
+  font-size: 125%;
+  width: 50%;
+  > input,
+  > .placeholder {
+    display: block;
+    appearance: none;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border: none;
+  }
+  > .placeholder {
+    pointer-events: none;
+    @include typed(
+      "Dear Frozo",
+      "Dear Cow Lord",
+      3,
+      (
+      iterations: 1,
+      end-on: "Dear Frazzle,\A This letter is dedicated to you, cause how the hell did you even find this game in the first place? You've made me play too many games that I won't usually play for the past year, and I appreciate you.\A But again, how the hell did you find this game? The Letter is not a game that I would usually touch, or even want to play, if I know this outside of contracts. It combines two things that I don't particularly enjoy, at least not to the same level as other people... Visual Novel... and Horror.\A I need to remind you again that the latter is something I vehemently dislike. I'm the type of guy who would close my eyes at scary scenes in a horror movie, and in this case, I definitely did close my eyes during the multitudes of scary scenes that this VN has.\A The game is telling a story about a group of people who got cursed as they read a letter marred in blood saying help me more than dozens of times, and to send this letter to five people or die. The premise is as tacky as it sounds, but the game itself doesn't let that tackiness lead the dance, so to speak. It grounds itself by actually developing its character and giving us reason to care about them. \A It slyly does this by exploring each character's trauma, because the supernatural force behind this curse is using their own trauma against them. Sending them nightmares, whispering things, reminding them of their guilt, reminding them of their weakness. Honestly, I was genuinely surprised that by the end, I was glad that none of them dies (I checked with the guides, if I didn't do this with guides, there are real chances that some of these people would die. I don't know if that would make me seem like a coward, but I don't care.)\A Anyway, I only managed to complete this game through one of its endings. Looking at the branching path that the game give me, there are as much as ten endings, with variance depending on friendship points (they have this system!) for extra epilogue scenes. I'll probably come back to this game later to check some of the possible couple ending, cause there's a few of them that I'd like to see by the end... but for now, and for this bounty, I'll allow myself this happy ending where nobody dies... and the mansion where the letter was spawned is burned to crisp, as hallowed sounds of people dying filled the grounds even after there was nothing left... \A Thank you for contracting me this, \A AlwaysNever")
+    );
+  }
+  > input {
+    &:focus,
+    &:active {
+      + .placeholder {
+        display: none;
+      }
+    }
+  }
+}
