@@ -19,17 +19,8 @@ h1{
 
 @media only screen and (max-width: 685px) {
   main {
-    display: flex;
-    place-items: center;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media only screen and (max-width:5000px){
-  body{
-      margin: 100px;
-      padding: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 }
 
