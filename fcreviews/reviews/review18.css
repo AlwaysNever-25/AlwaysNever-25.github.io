@@ -1,0 +1,1089 @@
+@charset "UTF-8";
+body {
+  background-color: black;
+  color: #e6e6e6;
+  margin: 50px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+a {
+  color: #e6e6e6;
+}
+
+.date{
+  text-align: right;
+  font-size: small;
+}
+
+.paragraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.column{
+  flex-direction: column;
+  padding: 20px;
+}
+
+.images{
+  padding: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+  body {
+    margin: 20px;
+  }
+}
+@media only screen and (max-width: 350px) {
+  body {
+    margin: 10px;
+  }
+}
+.mw::before {
+  content: "​";
+  content: "​"/"Merriam-Webster";
+  alt: "Merriam-Webster";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-0 3.48s linear 1s 1 forwards, typed-0-final 1.5s linear 4.48s 1 forwards;
+}
+@keyframes typed-0-final {
+  0%, 6.6666666667% {
+    content: "​M";
+    content: "​M"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  6.6676666667%, 13.3333333333% {
+    content: "​Me";
+    content: "​Me"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  13.3343333333%, 20% {
+    content: "​Mer";
+    content: "​Mer"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  20.001%, 26.6666666667% {
+    content: "​Merr";
+    content: "​Merr"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  26.6676666667%, 33.3333333333% {
+    content: "​Merri";
+    content: "​Merri"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  33.3343333333%, 40% {
+    content: "​Merria";
+    content: "​Merria"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  40.001%, 46.6666666667% {
+    content: "​Merriam";
+    content: "​Merriam"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  46.6676666667%, 53.3333333333% {
+    content: "​Merriam-";
+    content: "​Merriam-"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  53.3343333333%, 60% {
+    content: "​Merriam-W";
+    content: "​Merriam-W"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  60.001%, 66.6666666667% {
+    content: "​Merriam-We";
+    content: "​Merriam-We"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  66.6676666667%, 73.3333333333% {
+    content: "​Merriam-Web";
+    content: "​Merriam-Web"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  73.3343333333%, 80% {
+    content: "​Merriam-Webs";
+    content: "​Merriam-Webs"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  80.001%, 86.6666666667% {
+    content: "​Merriam-Webst";
+    content: "​Merriam-Webst"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  86.6676666667%, 93.3333333333% {
+    content: "​Merriam-Webste";
+    content: "​Merriam-Webste"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  93.3343333333%, 100% {
+    content: "​Merriam-Webster";
+    content: "​Merriam-Webster"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+}
+@keyframes typed-0 {
+  0%, 2.8725632184% {
+    content: "​M";
+    content: "​M"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  2.8735632184%, 5.7461264368% {
+    content: "​Me";
+    content: "​Me"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  5.7471264368%, 8.6196896552% {
+    content: "​Mer";
+    content: "​Mer"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  8.6206896552%, 11.4932528736% {
+    content: "​Merr";
+    content: "​Merr"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  11.4942528736%, 14.366816092% {
+    content: "​Merri";
+    content: "​Merri"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  14.367816092%, 17.2403793103% {
+    content: "​Merrie";
+    content: "​Merrie"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  17.2413793103%, 20.1139425287% {
+    content: "​Merriem";
+    content: "​Merriem"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  20.1149425287%, 22.9875057471% {
+    content: "​Merriem-";
+    content: "​Merriem-"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  22.9885057471%, 25.8610689655% {
+    content: "​Merriem-W";
+    content: "​Merriem-W"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  25.8620689655%, 28.7346321839% {
+    content: "​Merriem-We";
+    content: "​Merriem-We"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  28.7356321839%, 62.6426781609% {
+    content: "​Merriem-Web";
+    content: "​Merriem-Web"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  62.6436781609%, 64.9415287356% {
+    content: "​Merriem-We";
+    content: "​Merriem-We"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  64.9425287356%, 67.2403793103% {
+    content: "​Merriem-W";
+    content: "​Merriem-W"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  67.2413793103%, 69.5392298851% {
+    content: "​Merriem-";
+    content: "​Merriem-"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  69.5402298851%, 71.8380804598% {
+    content: "​Merriem";
+    content: "​Merriem"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  71.8390804598%, 74.1369310345% {
+    content: "​Merrie";
+    content: "​Merrie"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  74.1379310345%, 76.4357816092% {
+    content: "​Merri";
+    content: "​Merri"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  76.4367816092%, 78.7346321839% {
+    content: "​Merr";
+    content: "​Merr"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  78.7356321839%, 81.0334827586% {
+    content: "​Mer";
+    content: "​Mer"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  81.0344827586%, 83.3323333333% {
+    content: "​Me";
+    content: "​Me"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  83.3333333333%, 85.631183908% {
+    content: "​M";
+    content: "​M"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+  85.632183908%, 100% {
+    content: "​";
+    content: "​"/"Merriam-Webster";
+    alt: "Merriam-Webster";
+  }
+}
+
+.mw-def::before {
+  content: "​";
+  content: "​"/"a person unusually devoted to reading and study";
+  alt: "a person unusually devoted to reading and study";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-1 4.92s linear 10s 1 forwards, typed-1-final 4.7s linear 14.92s 1 forwards;
+}
+@keyframes typed-1-final {
+  0%, 2.1276595745% {
+    content: "​a";
+    content: "​a"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  2.1286595745%, 4.2553191489% {
+    content: "​a ";
+    content: "​a "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  4.2563191489%, 6.3829787234% {
+    content: "​a p";
+    content: "​a p"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  6.3839787234%, 8.5106382979% {
+    content: "​a pe";
+    content: "​a pe"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  8.5116382979%, 10.6382978723% {
+    content: "​a per";
+    content: "​a per"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  10.6392978723%, 12.7659574468% {
+    content: "​a pers";
+    content: "​a pers"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  12.7669574468%, 14.8936170213% {
+    content: "​a perso";
+    content: "​a perso"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  14.8946170213%, 17.0212765957% {
+    content: "​a person";
+    content: "​a person"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  17.0222765957%, 19.1489361702% {
+    content: "​a person ";
+    content: "​a person "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  19.1499361702%, 21.2765957447% {
+    content: "​a person u";
+    content: "​a person u"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  21.2775957447%, 23.4042553191% {
+    content: "​a person un";
+    content: "​a person un"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  23.4052553191%, 25.5319148936% {
+    content: "​a person unu";
+    content: "​a person unu"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  25.5329148936%, 27.6595744681% {
+    content: "​a person unus";
+    content: "​a person unus"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  27.6605744681%, 29.7872340426% {
+    content: "​a person unusu";
+    content: "​a person unusu"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  29.7882340426%, 31.914893617% {
+    content: "​a person unusua";
+    content: "​a person unusua"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  31.915893617%, 34.0425531915% {
+    content: "​a person unusual";
+    content: "​a person unusual"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  34.0435531915%, 36.170212766% {
+    content: "​a person unusuall";
+    content: "​a person unusuall"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  36.171212766%, 38.2978723404% {
+    content: "​a person unusually";
+    content: "​a person unusually"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  38.2988723404%, 40.4255319149% {
+    content: "​a person unusually ";
+    content: "​a person unusually "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  40.4265319149%, 42.5531914894% {
+    content: "​a person unusually d";
+    content: "​a person unusually d"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  42.5541914894%, 44.6808510638% {
+    content: "​a person unusually de";
+    content: "​a person unusually de"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  44.6818510638%, 46.8085106383% {
+    content: "​a person unusually dev";
+    content: "​a person unusually dev"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  46.8095106383%, 48.9361702128% {
+    content: "​a person unusually devo";
+    content: "​a person unusually devo"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  48.9371702128%, 51.0638297872% {
+    content: "​a person unusually devot";
+    content: "​a person unusually devot"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  51.0648297872%, 53.1914893617% {
+    content: "​a person unusually devote";
+    content: "​a person unusually devote"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  53.1924893617%, 55.3191489362% {
+    content: "​a person unusually devoted";
+    content: "​a person unusually devoted"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  55.3201489362%, 57.4468085106% {
+    content: "​a person unusually devoted ";
+    content: "​a person unusually devoted "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  57.4478085106%, 59.5744680851% {
+    content: "​a person unusually devoted t";
+    content: "​a person unusually devoted t"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  59.5754680851%, 61.7021276596% {
+    content: "​a person unusually devoted to";
+    content: "​a person unusually devoted to"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  61.7031276596%, 63.829787234% {
+    content: "​a person unusually devoted to ";
+    content: "​a person unusually devoted to "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  63.830787234%, 65.9574468085% {
+    content: "​a person unusually devoted to r";
+    content: "​a person unusually devoted to r"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  65.9584468085%, 68.085106383% {
+    content: "​a person unusually devoted to re";
+    content: "​a person unusually devoted to re"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  68.086106383%, 70.2127659574% {
+    content: "​a person unusually devoted to rea";
+    content: "​a person unusually devoted to rea"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  70.2137659574%, 72.3404255319% {
+    content: "​a person unusually devoted to read";
+    content: "​a person unusually devoted to read"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  72.3414255319%, 74.4680851064% {
+    content: "​a person unusually devoted to readi";
+    content: "​a person unusually devoted to readi"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  74.4690851064%, 76.5957446809% {
+    content: "​a person unusually devoted to readin";
+    content: "​a person unusually devoted to readin"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  76.5967446809%, 78.7234042553% {
+    content: "​a person unusually devoted to reading";
+    content: "​a person unusually devoted to reading"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  78.7244042553%, 80.8510638298% {
+    content: "​a person unusually devoted to reading ";
+    content: "​a person unusually devoted to reading "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  80.8520638298%, 82.9787234043% {
+    content: "​a person unusually devoted to reading a";
+    content: "​a person unusually devoted to reading a"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  82.9797234043%, 85.1063829787% {
+    content: "​a person unusually devoted to reading an";
+    content: "​a person unusually devoted to reading an"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  85.1073829787%, 87.2340425532% {
+    content: "​a person unusually devoted to reading and";
+    content: "​a person unusually devoted to reading and"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  87.2350425532%, 89.3617021277% {
+    content: "​a person unusually devoted to reading and ";
+    content: "​a person unusually devoted to reading and "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  89.3627021277%, 91.4893617021% {
+    content: "​a person unusually devoted to reading and s";
+    content: "​a person unusually devoted to reading and s"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  91.4903617021%, 93.6170212766% {
+    content: "​a person unusually devoted to reading and st";
+    content: "​a person unusually devoted to reading and st"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  93.6180212766%, 95.7446808511% {
+    content: "​a person unusually devoted to reading and stu";
+    content: "​a person unusually devoted to reading and stu"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  95.7456808511%, 97.8723404255% {
+    content: "​a person unusually devoted to reading and stud";
+    content: "​a person unusually devoted to reading and stud"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  97.8733404255%, 100% {
+    content: "​a person unusually devoted to reading and study";
+    content: "​a person unusually devoted to reading and study"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+}
+@keyframes typed-1 {
+  0%, 2.0315203252% {
+    content: "​a";
+    content: "​a"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  2.0325203252%, 4.0640406504% {
+    content: "​a ";
+    content: "​a "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  4.0650406504%, 6.0965609756% {
+    content: "​a p";
+    content: "​a p"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  6.0975609756%, 8.1290813008% {
+    content: "​a pe";
+    content: "​a pe"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  8.1300813008%, 10.161601626% {
+    content: "​a per";
+    content: "​a per"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  10.162601626%, 12.1941219512% {
+    content: "​a pers";
+    content: "​a pers"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  12.1951219512%, 14.2266422764% {
+    content: "​a perso";
+    content: "​a perso"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  14.2276422764%, 16.2591626016% {
+    content: "​a person";
+    content: "​a person"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  16.2601626016%, 18.2916829268% {
+    content: "​a person ";
+    content: "​a person "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  18.2926829268%, 20.324203252% {
+    content: "​a person a";
+    content: "​a person a"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  20.325203252%, 22.3567235772% {
+    content: "​a person ac";
+    content: "​a person ac"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  22.3577235772%, 24.3892439024% {
+    content: "​a person ack";
+    content: "​a person ack"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  24.3902439024%, 26.4217642276% {
+    content: "​a person acks";
+    content: "​a person acks"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  26.4227642276%, 28.4542845528% {
+    content: "​a person acksh";
+    content: "​a person acksh"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  28.4552845528%, 30.486804878% {
+    content: "​a person ackshu";
+    content: "​a person ackshu"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  30.487804878%, 32.5193252033% {
+    content: "​a person ackshua";
+    content: "​a person ackshua"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  32.5203252033%, 34.5518455285% {
+    content: "​a person ackshual";
+    content: "​a person ackshual"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  34.5528455285%, 36.5843658537% {
+    content: "​a person ackshuall";
+    content: "​a person ackshuall"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  36.5853658537%, 60.5681056911% {
+    content: "​a person ackshually";
+    content: "​a person ackshually"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  60.5691056911%, 62.1941219512% {
+    content: "​a person ackshuall";
+    content: "​a person ackshuall"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  62.1951219512%, 63.8201382114% {
+    content: "​a person ackshual";
+    content: "​a person ackshual"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  63.8211382114%, 65.4461544715% {
+    content: "​a person ackshua";
+    content: "​a person ackshua"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  65.4471544715%, 67.0721707317% {
+    content: "​a person ackshu";
+    content: "​a person ackshu"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  67.0731707317%, 68.6981869919% {
+    content: "​a person acksh";
+    content: "​a person acksh"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  68.6991869919%, 70.324203252% {
+    content: "​a person acks";
+    content: "​a person acks"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  70.325203252%, 71.9502195122% {
+    content: "​a person ack";
+    content: "​a person ack"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  71.9512195122%, 73.5762357724% {
+    content: "​a person ac";
+    content: "​a person ac"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  73.5772357724%, 75.2022520325% {
+    content: "​a person a";
+    content: "​a person a"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  75.2032520325%, 76.8282682927% {
+    content: "​a person ";
+    content: "​a person "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  76.8292682927%, 78.4542845528% {
+    content: "​a person";
+    content: "​a person"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  78.4552845528%, 80.080300813% {
+    content: "​a perso";
+    content: "​a perso"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  80.081300813%, 81.7063170732% {
+    content: "​a pers";
+    content: "​a pers"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  81.7073170732%, 83.3323333333% {
+    content: "​a per";
+    content: "​a per"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  83.3333333333%, 84.9583495935% {
+    content: "​a pe";
+    content: "​a pe"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  84.9593495935%, 86.5843658537% {
+    content: "​a p";
+    content: "​a p"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  86.5853658537%, 88.2103821138% {
+    content: "​a ";
+    content: "​a "/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  88.2113821138%, 89.836398374% {
+    content: "​a";
+    content: "​a"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+  89.837398374%, 100% {
+    content: "​";
+    content: "​"/"a person unusually devoted to reading and study";
+    alt: "a person unusually devoted to reading and study";
+  }
+}
+
+.cmbrdg::before {
+  content: "​";
+  content: "​"/"Cambridge";
+  alt: "Cambridge";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-2 2.76s linear 1s 1 forwards, typed-2-final 0.9s linear 3.76s 1 forwards;
+}
+@keyframes typed-2-final {
+  0%, 11.1111111111% {
+    content: "​C";
+    content: "​C"/"Cambridge";
+    alt: "Cambridge";
+  }
+  11.1121111111%, 22.2222222222% {
+    content: "​Ca";
+    content: "​Ca"/"Cambridge";
+    alt: "Cambridge";
+  }
+  22.2232222222%, 33.3333333333% {
+    content: "​Cam";
+    content: "​Cam"/"Cambridge";
+    alt: "Cambridge";
+  }
+  33.3343333333%, 44.4444444444% {
+    content: "​Camb";
+    content: "​Camb"/"Cambridge";
+    alt: "Cambridge";
+  }
+  44.4454444444%, 55.5555555556% {
+    content: "​Cambr";
+    content: "​Cambr"/"Cambridge";
+    alt: "Cambridge";
+  }
+  55.5565555556%, 66.6666666667% {
+    content: "​Cambri";
+    content: "​Cambri"/"Cambridge";
+    alt: "Cambridge";
+  }
+  66.6676666667%, 77.7777777778% {
+    content: "​Cambrid";
+    content: "​Cambrid"/"Cambridge";
+    alt: "Cambridge";
+  }
+  77.7787777778%, 88.8888888889% {
+    content: "​Cambridg";
+    content: "​Cambridg"/"Cambridge";
+    alt: "Cambridge";
+  }
+  88.8898888889%, 100% {
+    content: "​Cambridge";
+    content: "​Cambridge"/"Cambridge";
+    alt: "Cambridge";
+  }
+}
+@keyframes typed-2 {
+  0%, 3.6221884058% {
+    content: "​C";
+    content: "​C"/"Cambridge";
+    alt: "Cambridge";
+  }
+  3.6231884058%, 7.2453768116% {
+    content: "​Ca";
+    content: "​Ca"/"Cambridge";
+    alt: "Cambridge";
+  }
+  7.2463768116%, 10.8685652174% {
+    content: "​Cam";
+    content: "​Cam"/"Cambridge";
+    alt: "Cambridge";
+  }
+  10.8695652174%, 14.4917536232% {
+    content: "​Camm";
+    content: "​Camm"/"Cambridge";
+    alt: "Cambridge";
+  }
+  14.4927536232%, 18.114942029% {
+    content: "​Cammb";
+    content: "​Cammb"/"Cambridge";
+    alt: "Cambridge";
+  }
+  18.115942029%, 21.7381304348% {
+    content: "​Cammbr";
+    content: "​Cammbr"/"Cambridge";
+    alt: "Cambridge";
+  }
+  21.7391304348%, 64.4917536232% {
+    content: "​Cammbri";
+    content: "​Cammbri"/"Cambridge";
+    alt: "Cambridge";
+  }
+  64.4927536232%, 67.3903043478% {
+    content: "​Cammbr";
+    content: "​Cammbr"/"Cambridge";
+    alt: "Cambridge";
+  }
+  67.3913043478%, 70.2888550725% {
+    content: "​Cammb";
+    content: "​Cammb"/"Cambridge";
+    alt: "Cambridge";
+  }
+  70.2898550725%, 73.1874057971% {
+    content: "​Camm";
+    content: "​Camm"/"Cambridge";
+    alt: "Cambridge";
+  }
+  73.1884057971%, 76.0859565217% {
+    content: "​Cam";
+    content: "​Cam"/"Cambridge";
+    alt: "Cambridge";
+  }
+  76.0869565217%, 78.9845072464% {
+    content: "​Ca";
+    content: "​Ca"/"Cambridge";
+    alt: "Cambridge";
+  }
+  78.9855072464%, 81.883057971% {
+    content: "​C";
+    content: "​C"/"Cambridge";
+    alt: "Cambridge";
+  }
+  81.884057971%, 100% {
+    content: "​";
+    content: "​"/"Cambridge";
+    alt: "Cambridge";
+  }
+}
+
+.cmbrdg-def::before {
+  content: "​";
+  content: "​"/"a person who reads a lot";
+  alt: "a person who reads a lot";
+  white-space: break-spaces;
+  will-change: content;
+  animation: typed-3 4.2s linear 10s 1 forwards, typed-3-final 2.4s linear 14.2s 1 forwards;
+}
+@keyframes typed-3-final {
+  0%, 4.1666666667% {
+    content: "​a";
+    content: "​a"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  4.1676666667%, 8.3333333333% {
+    content: "​a ";
+    content: "​a "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  8.3343333333%, 12.5% {
+    content: "​a p";
+    content: "​a p"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  12.501%, 16.6666666667% {
+    content: "​a pe";
+    content: "​a pe"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  16.6676666667%, 20.8333333333% {
+    content: "​a per";
+    content: "​a per"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  20.8343333333%, 25% {
+    content: "​a pers";
+    content: "​a pers"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  25.001%, 29.1666666667% {
+    content: "​a perso";
+    content: "​a perso"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  29.1676666667%, 33.3333333333% {
+    content: "​a person";
+    content: "​a person"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  33.3343333333%, 37.5% {
+    content: "​a person ";
+    content: "​a person "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  37.501%, 41.6666666667% {
+    content: "​a person w";
+    content: "​a person w"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  41.6676666667%, 45.8333333333% {
+    content: "​a person wh";
+    content: "​a person wh"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  45.8343333333%, 50% {
+    content: "​a person who";
+    content: "​a person who"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  50.001%, 54.1666666667% {
+    content: "​a person who ";
+    content: "​a person who "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  54.1676666667%, 58.3333333333% {
+    content: "​a person who r";
+    content: "​a person who r"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  58.3343333333%, 62.5% {
+    content: "​a person who re";
+    content: "​a person who re"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  62.501%, 66.6666666667% {
+    content: "​a person who rea";
+    content: "​a person who rea"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  66.6676666667%, 70.8333333333% {
+    content: "​a person who read";
+    content: "​a person who read"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  70.8343333333%, 75% {
+    content: "​a person who reads";
+    content: "​a person who reads"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  75.001%, 79.1666666667% {
+    content: "​a person who reads ";
+    content: "​a person who reads "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  79.1676666667%, 83.3333333333% {
+    content: "​a person who reads a";
+    content: "​a person who reads a"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  83.3343333333%, 87.5% {
+    content: "​a person who reads a ";
+    content: "​a person who reads a "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  87.501%, 91.6666666667% {
+    content: "​a person who reads a l";
+    content: "​a person who reads a l"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  91.6676666667%, 95.8333333333% {
+    content: "​a person who reads a lo";
+    content: "​a person who reads a lo"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  95.8343333333%, 100% {
+    content: "​a person who reads a lot";
+    content: "​a person who reads a lot"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+}
+@keyframes typed-3 {
+  0%, 2.379952381% {
+    content: "​a";
+    content: "​a"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  2.380952381%, 4.7609047619% {
+    content: "​a ";
+    content: "​a "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  4.7619047619%, 7.1418571429% {
+    content: "​a p";
+    content: "​a p"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  7.1428571429%, 9.5228095238% {
+    content: "​a pe";
+    content: "​a pe"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  9.5238095238%, 11.9037619048% {
+    content: "​a per";
+    content: "​a per"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  11.9047619048%, 14.2847142857% {
+    content: "​a pers";
+    content: "​a pers"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  14.2857142857%, 16.6656666667% {
+    content: "​a perso";
+    content: "​a perso"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  16.6666666667%, 19.0466190476% {
+    content: "​a person";
+    content: "​a person"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  19.0476190476%, 21.4275714286% {
+    content: "​a person ";
+    content: "​a person "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  21.4285714286%, 23.8085238095% {
+    content: "​a person w";
+    content: "​a person w"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  23.8095238095%, 26.1894761905% {
+    content: "​a person wh";
+    content: "​a person wh"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  26.1904761905%, 28.5704285714% {
+    content: "​a person who";
+    content: "​a person who"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  28.5714285714%, 30.9513809524% {
+    content: "​a person whom";
+    content: "​a person whom"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  30.9523809524%, 33.3323333333% {
+    content: "​a person whom ";
+    content: "​a person whom "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  33.3333333333%, 61.4275714286% {
+    content: "​a person whom r";
+    content: "​a person whom r"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  61.4285714286%, 63.3323333333% {
+    content: "​a person whom ";
+    content: "​a person whom "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  63.3333333333%, 65.2370952381% {
+    content: "​a person whom";
+    content: "​a person whom"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  65.2380952381%, 67.1418571429% {
+    content: "​a person who";
+    content: "​a person who"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  67.1428571429%, 69.0466190476% {
+    content: "​a person wh";
+    content: "​a person wh"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  69.0476190476%, 70.9513809524% {
+    content: "​a person w";
+    content: "​a person w"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  70.9523809524%, 72.8561428571% {
+    content: "​a person ";
+    content: "​a person "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  72.8571428571%, 74.7609047619% {
+    content: "​a person";
+    content: "​a person"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  74.7619047619%, 76.6656666667% {
+    content: "​a perso";
+    content: "​a perso"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  76.6666666667%, 78.5704285714% {
+    content: "​a pers";
+    content: "​a pers"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  78.5714285714%, 80.4751904762% {
+    content: "​a per";
+    content: "​a per"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  80.4761904762%, 82.379952381% {
+    content: "​a pe";
+    content: "​a pe"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  82.380952381%, 84.2847142857% {
+    content: "​a p";
+    content: "​a p"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  84.2857142857%, 86.1894761905% {
+    content: "​a ";
+    content: "​a "/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  86.1904761905%, 88.0942380952% {
+    content: "​a";
+    content: "​a"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+  88.0952380952%, 100% {
+    content: "​";
+    content: "​"/"a person who reads a lot";
+    alt: "a person who reads a lot";
+  }
+}/*# sourceMappingURL=review18.css.map */
