@@ -6,10 +6,6 @@ body{
     text-align: center;
 }
 
-.review-title {
-    text-shadow: 1px 1px #000;
-}
-
 .review{
     display: grid;
     border: 1px solid #f0f0f0;
@@ -42,6 +38,12 @@ body{
     grid-row-end: 4;
 }
 
+.season-inner-title {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
 
 .card1{
     border: 1px solid #f0f0f0;
@@ -64,54 +66,136 @@ body{
     padding: 10px;
 }
 
-.review1{
+.cardfull{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 10px;
+}
+
+.review-title{
+    font-size: 20px;
     text-decoration: none;
+}
+
+.no-pointer{
+    cursor: default;
+}
+
+.azure{
     color:azure;
 }
 
-.review2{
-    text-decoration: none;
+.red{
     color:red;
 }
 
-.review3{
-    text-decoration: none;
+.gold{
     color: gold;
 }
 
-.review4{
-    text-decoration: none;
+.yellow{
     color: yellow;
 }
 
-.review5{
-    text-decoration: none;
+.peachpuff{
     color: peachpuff;
 }
 
-.review6{
-    text-decoration: none;
+.pink{
     color: pink;
 }
 
-.review7{
-    text-decoration: none;
+.yellowgreen{
     color: yellowgreen;
 }
 
-.review8{
-    text-decoration: none;
+.lightskyblue{
     color: lightskyblue;
 }
 
-.review9{
-    text-decoration: none;
+.lime{
     color: lime;
 }
 
-.review10 {
-    text-decoration: none;
+.lightblue {
     color: lightblue;
+}
+
+.pasture{
+    color: #73855E;
+}
+
+.lightpurple{
+    color: #BF77F6;
+}
+
+.lightslategrey{
+    color: lightslategrey;
+}
+
+.jade{
+    color:#00A36C;
+}
+
+.rebeccapink{
+    color:#ca4477;
+}
+
+.white{
+    color: #f0f0f0;
+}
+
+@keyframes rainbow {
+  0% {
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  14%{
+    background: linear-gradient(to right, violet,red,orange,yellow,green,blue,indigo);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  28%{
+    background: linear-gradient(to right, indigo,violet,red,orange,yellow,green,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  42%{
+    background: linear-gradient(to right, blue,indigo,violet,red,orange,yellow,green);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  56%{
+    background: linear-gradient(to right, green,blue,indigo,violet,red,orange,yellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  71%{
+    background: linear-gradient(to right, yellow,green,blue,indigo,violet,red,orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  85%{
+    background: linear-gradient(to right, orange,yellow,green,blue,indigo,violet,red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  100%{
+    background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.spring-break{
+  background: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 500ms ease 0s infinite;
+  font-size: 30px;
 }
 
 .ml3 {
@@ -140,16 +224,18 @@ body{
     }
     
     .card3{
-        border: 1px solid #f0f0f0;
         grid-column-start: 1;
         grid-column-end: 7;
-        padding: 10px;
+    }
+
+    .cardfull{
+        grid-column-start: 1;
+        grid-column-end: 7;
     }
   }
 
-@media only screen and (max-width:5000px){
+@media only screen and (max-width: 350px) {
     body{
-        margin: 100px;
-        padding: 50px;
+        margin: auto;
     }
-}
+  }
