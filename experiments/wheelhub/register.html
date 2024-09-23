@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <header>
+        <img src="Assets/logo-transparent.png" alt="">
+    </header>
+    <section>
+        <form action="home.html" name="regis" onsubmit="return validate()">
+            <h2>REGISTER</h2>
+            <div id="error"></div>
+            <div>
+        <label for="username"> Username </label>
+        <input type="text" name="username" id="username" >
+
+        <label for="email"> Email  </label>
+        <input type="text" name="email" id="email">
+
+        <label for="password"> Password </label>
+        <input type="password" name="password" id="password">
+
+        <label for="conf-pass"> Confirm Password </label>
+        <input type="password" name="conf-pass" id="conf-pass">
+        <div class="block">
+            <label for="gender">Gender</label>
+            <br>
+            <input type="radio" name="gender" id="male">
+            <label for="male"> Male </label>
+
+            <input type="radio" name="gender" id="female">
+            <label for="female"> Female </label><br>
+        </div>
+        <label for="dob"> Date of Birth</label>
+        <input type="date" name="dob" id="dob">
+        <br>
+        <div class="block">
+            <input type="checkbox" name="agree" id="agree">
+            <label for="agree"> Agree to Terms & Policy </label> 
+        </div>
+        <br>
+        <br>
+        <div class="center">
+        <button type="submit" class="button"> Register </button>
+    </div>
+                </div>
+            </form>
+    </section>
+</div>
+</div>
+</body>
+<script src="js/register.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+</html>

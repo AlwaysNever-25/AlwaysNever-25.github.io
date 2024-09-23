@@ -1,0 +1,37 @@
+body{
+    font-family: "Bebas Neue";
+}
+
+.promotion-banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.promotion-banner img{
+    width: 75%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.promotion-banner img ~ .car-container{
+    transition: opacity 1s ease-out, height 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
+.promotion-banner img:hover ~ .car-container{
+    opacity: 1;
+    height: auto;
+}
+
+.car-desc{
+    font-size: 18px;
+}
+
+.car-desc span{
+    font-size: 25px;
+    color: red;
+}

@@ -1,0 +1,65 @@
+body{
+    font-family: "Bebas Neue";
+    background-image: url(../Assets/abstract.jpg);
+    background-size: contain;
+}
+
+.cars{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-content: center;
+    align-items: center;
+}
+
+.cars-title{
+    font-size: 35px;
+    font-family: "Bebas Neue";
+    text-align: center;
+}
+
+.car{
+    min-width: 450px;
+    margin: 10px;
+    box-shadow: 5px 10px 10px grey;
+    border-radius: 10px;
+    transition: box-shadow 1s, transform 1s;
+}
+
+.car:hover{
+    transform: scale(1.02);
+    box-shadow: 5px 10px 10px #ff00009d;
+}
+
+.car-container{
+    padding: 10px;
+    text-align: center;
+}
+
+.car-image{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.car-image img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.car-category{
+    text-align: center;
+    font-size: 30px;
+}
+
+.car-desc{
+    font-size: 18px;
+}
+
+.car-desc span{
+    font-size: 25px;
+    color: red;
+}

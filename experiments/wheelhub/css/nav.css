@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+nav{
+    display:flex;
+    background-color: rgba(114, 17, 17, 0.935);
+    padding:15px;
+    justify-content: space-around;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+a{
+    text-decoration:none;
+    color:rgba(255, 204, 0, 0.86);
+    font-size:25px;
+    font-weight: bold;
+}
+a:hover{
+    color:white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+	position: relative;
+	display: inline-block;
+	margin: 10px;
+}
+  
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #400828;
+	font-family: aileron-light;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+  
+/* Links inside the dropdown */
+.dropdown-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+ }
+  
+  /* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #3e8e41;
+}
+
+.wrapper{
+	background-color: rgba(21, 32, 43, 0.8);
+}
+
+.margin{
+	margin: 10px;
+}

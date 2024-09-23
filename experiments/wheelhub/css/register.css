@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "Aileron";
+    src: url(../font/Aileron-Light.otf);
+}
+
+header img{
+    margin-bottom: 20px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../Assets/product_card/2024_land_cruiser.jpeg);
+    background-size: cover;
+    backdrop-filter: blur(1px);
+    font-family: "Aileron";
+}
+section{
+    border: 2px solid rgba(228, 200, 163, 0.336);
+    border-radius: 10px;
+    padding: 10px;
+    width: 20%;
+    background-color: rgba(65, 57, 47, 0.596);
+}
+h2{
+    text-align: center;
+    color: white;
+}
+div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    background-color: rgba(228, 200, 163, 0.336);
+    font-size: 25px;
+    color: white;
+    width: 150px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+.block{
+    display: block;
+}
+label{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+input{
+    background-color:rgba(199, 197, 194, 0.336);
+    border: 1px solid rgba(199, 197, 194, 0.336);
+    border-radius: 10px;
+}

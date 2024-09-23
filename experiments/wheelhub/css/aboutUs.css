@@ -1,0 +1,126 @@
+body{
+    background-image: url(../Assets/abstract.jpg);
+    background-size: contain;
+}
+
+.aboutUs-story{
+    font-family: "Bebas Neue";
+    display: flex;
+}
+
+.aboutUs-title{
+    font-family: "Bebas Neue";
+    display: block; 
+    width: 100%;
+    font-size: 35px;
+    text-align: center;
+}
+
+.aboutUs-title h1{
+    margin: 0;
+    padding: 0;
+}
+
+.aboutUs-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    width: 50%;
+}
+
+.aboutUs-desc{
+    display: flex; 
+    padding: 20px; 
+    align-items: center; 
+    border-radius: 10px;  
+    width: 50%;
+    text-align: justify;
+}
+
+.visi-misi, .activities{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    align-content: center;
+}
+
+.activities-title{
+    font-size: 35px;
+    font-family: "Bebas Neue";
+    text-align: center;
+}
+
+.activities{
+    align-items: center;
+}
+
+.activity{
+    min-width: 450px;
+    margin: 10px;
+    box-shadow: 5px 10px 10px grey;
+    border-radius: 10px;
+}
+
+.activity-container{
+    padding: 10px;
+    text-align: center;
+}
+
+.visi-misi h1{
+    font-family: "Bebas Neue";
+    color: black;
+}
+
+.visi-image, .misi-image{
+    display: flex;
+    justify-content: center;
+}
+
+.activity-image{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.visi-image img, .misi-image img{
+    height: 200px;
+}
+
+.activity-image img{
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+.visi-container, .misi-container{
+    background-color: ghostwhite;
+    box-shadow: 5px 10px 10px grey;
+    border-radius: 10px;
+    width: 180px;
+    height: 200px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.visi-content h1, .misi-content h1, .activity-content h1,
+.visi-desc, .misi-desc, .activity-desc{
+    align-items: center;
+}
+
+.visi-misi{
+    border-bottom: 1px dashed black;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 850px) {
+    .aboutUs-story{
+       display: block; 
+    }
+    
+    .aboutUs-logo, .aboutUs-desc{
+        width: auto;
+    }
+}

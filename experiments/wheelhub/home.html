@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Wheel Hub</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/cars.css">
+    <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/header.js" async></script>
+    <script src="js/carousel-jquery.js" async></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <div class="Logo">
+                <img src="Assets/logo-transparent.png" alt="">
+            </div>
+            <div class="link">
+                <div class="header-link">
+                    <a href="home.html">Home</a>
+                </div>
+                <div class="header-link">
+                    <a href="promotion.html">Promotion</a>   
+                </div>
+                <div class="header-link">  
+                    <div class="dropdown">
+                        <a href="cars.html">
+                            All Cars <img src="Assets/ui/down_down_arrow.png" alt="" width="20px">
+                            <div class="dropdown-item">
+                                <div class="dropdown-link"><a class="" href="cars.html#toyota">Toyota</a>
+                                </div>
+                                <div class="dropdown-link"><a class="" href="cars.html#mercedes">Mercedes</a>
+                                </div>
+                                <div class="dropdown-link"> <a class="" href="cars.html#bmw">BMW</a>
+                                </div>
+                                <div class="dropdown-link"> <a class="" href="cars.html#audi">Audi</a>
+                                </div>
+                                <div class="dropdown-link"> <a class="" href="cars.html#ferrari">Ferrari</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-link">
+                    <a href="aboutUs.html">About Us</a>
+                </div>
+                <div class="header-link">
+                    <a href="register.html">Register</a>
+                </div>
+            </div>
+            <div class="hamburger">
+                <a href="javascript:void(0);" onclick="dropdown()">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="hero">
+            <div class="home-desc">
+                <p>From sleek sedans to rugged SUVs, <span style="font-size: 40px; color: red;">Wheel Hub</span> Online is your go-to destination for exceptional automotive experiences. Welcome to <span style="font-size: 40px; color: red;">Wheel Hub</span> online—where your journey to the perfect car begins.</p>
+            </div>
+            <div class="home-logo">
+                <img src="Assets/2024HighlanderHybridToyota.png.webp" alt="" style="width: 50%;">
+            </div>
+        </div>
+    
+        <div class="gallery">
+            <div class="carousel-container">
+                <div class="carousel-slider">
+                    <img src="Assets/discount_banner/20 percent.png" alt="" onclick="location.href ='promotion.html'">
+                    <img src="Assets/discount_banner/20 percent 2.png" alt="" onclick="location.href ='promotion.html'">
+                    <img src="Assets/discount_banner/20 percent 3.png" alt="" onclick="location.href ='promotion.html'">
+                    <img src="Assets/discount_banner/20 percent 4.png" alt="" onclick="location.href ='promotion.html'">
+                    <img src="Assets/discount_banner/20 percent 5.png" alt="" onclick="location.href ='promotion.html'">
+                </div>
+                <div class="button-container">
+                    <i class="fa fa-chevron-circle-left button-prev"></i>
+                    <i class="fa fa-chevron-circle-right button-next"></i>
+                    <!-- <button class="button-prev"><</button>
+                    <button class="button-next">></button> -->
+                </div>
+            </div>
+        </div>
+
+        <h1 id="featured-cars" class="cars-title">Featured Cars</h1>
+        <div class="cars">
+            <div class="car">
+                <div class="car-image">
+                    <img src="Assets/product_card/2023_Mirai.jpeg" alt="">
+                </div>
+                <div class="car-container">
+                    <h1>2023 Mirai</h1>
+                    <div class="car-desc">
+                        Price: <s>Rp 1.100.000.000</s> <span>Rp 825.000.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car-image">
+                    <img src="Assets/product_card/2024_GR_Corolla.jpeg" alt="">
+                </div>
+                <div class="car-container">
+                    <h1>2024 GR Corolla</h1>
+                    <div class="car-desc">
+                        Price: <s>Rp 608.000.000</s> <span>Rp 273.000.000</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car-image">
+                    <img src="Assets/product_card/2024_grand_highlander.jpeg" alt="">
+                </div>
+                <div class="car-container">
+                    <h1>2024 Grand Highlander</h1>
+                    <div class="car-desc">
+                        Price: Rp 606.000.000
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car-image">
+                    <img src="Assets/product_card/2024_land_cruiser.jpeg" alt="">
+                </div>
+                <div class="car-container">
+                    <h1>2024 Land Cruiser</h1>
+                    <div class="car-desc">
+                        Price: Rp 2.550.000.000
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car-image">
+                    <img src="Assets/product_card/2024_prius_prime.jpeg" alt="">
+                </div>
+                <div class="car-container">
+                    <h1>2024 Prius Prime</h1>
+                    <div class="car-desc">
+                        Price: Rp 517.000.000
+                    </div>
+                </div>
+            </div>
+
+            <div class="car">
+                <div class="car-image">
+                    <img src="Assets/product_card/2024_RAV4.jpeg" alt="">
+                </div>
+                <div class="car-container">
+                    <h1>2024 RAV4</h1>
+                    <div class="car-desc">
+                        Price: Rp 1.150.000.000
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="about">
+                <img src="Assets/logo-transparent.png" width="125px">
+                <ul style="list-style: none; padding-left: 1px;">
+                    <li>
+                        <a href="aboutUs.html" style="text-decoration: none; color: black;">About Us</a>
+                    </li>
+                    <li>
+                        <a href="contact.html" style="text-decoration: none; color: black;">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="resources">
+                <h3>Resources</h3>
+                <ul style="list-style: none; padding-left: 1px; margin-top: 0px;">
+                    <li>
+                        <a href="privacy-policy.html">
+                            Privacy Policy
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tos.html">Terms of Service</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social-media" style="padding-top: 10px;">
+                <h3>Follow Us</h3>
+                <div class="social-media-icons">
+                    <a href="https://instagram.com/HonkaiStarRail"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="https://twitter.com/HonkaiStarRail"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/HonkaiStarRail.ID/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <br>
+            © 2024 Wheel Hub. All Rights Reserved.
+        </div>
+    </footer>
+</body>
+</html>

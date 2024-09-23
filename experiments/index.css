@@ -1,0 +1,125 @@
+body{
+    margin: 20px;
+    color:#f0f0f0;
+    background-color: black;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.review{
+    display: grid;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.review-2{
+    display: grid;
+    border: 1px solid #f0f0f0;
+    padding: 10px;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.season-title {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.season-title-2 {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 4;
+}
+
+.season-inner-title {
+    font-size: 30px;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+
+.card1{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    padding: 10px;
+}
+
+.card2{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    padding: 10px;
+}
+
+.card3{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 5;
+    grid-column-end: 7;
+    padding: 10px;
+}
+
+.cardfull{
+    border: 1px solid #f0f0f0;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding: 10px;
+}
+
+.review-title{
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.no-pointer{
+    cursor: default;
+}
+
+.ml3 {
+    font-weight: 900;
+    font-size: 3.5em;
+}
+
+.date{
+    text-align: right;
+    font-size: small;
+}
+
+@media only screen and (max-width: 850px) {
+    .card1{
+        border: 1px solid #f0f0f0;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        padding: 10px;
+    }
+    
+    .card2{
+        border: 1px solid #f0f0f0;
+        grid-column-start: 1;
+        grid-column-end: 7;
+        padding: 10px;
+    }
+    
+    .card3{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+
+    .cardfull{
+        grid-column-start: 1;
+        grid-column-end: 7;
+    }
+  }
+
+@media only screen and (max-width: 350px) {
+    body{
+        margin: auto;
+    }
+  }

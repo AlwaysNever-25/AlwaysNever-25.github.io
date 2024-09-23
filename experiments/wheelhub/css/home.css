@@ -1,0 +1,218 @@
+/* .items {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    user-select: none;
+}
+  
+.items .item {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75em;
+    height: 500px;
+    overflow: hidden;
+    transition: all 300ms ease-in-out;
+    z-index: -1;
+    opacity: 0;
+}
+  
+.item img {
+    width: 100%;
+    height: 100%;
+}
+  
+.item.active {
+    opacity: 1;
+    z-index: 99;
+    box-shadow: 0px 0px 105px -35px rgba(0, 0, 0, 0.75);
+}
+  
+.item.prev {
+    z-index: 2;
+    opacity: 0;
+    transform: translate(-125%, -50%);
+}
+  
+.item.next {
+    z-index: 2;
+    opacity: 0;
+    transform: translate(25%, -50%);
+}
+  
+.items .button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 750px;
+    z-index: 100;
+}
+  
+.button-container .button {
+    color: #fff;
+    font-size: 32px;
+    cursor: pointer;
+    position: relative;
+    opacity: 0.75;
+    transition: all 300ms ease-in-out;
+}
+  
+.button-container .button:hover {
+    opacity: 1;
+}
+  
+.button-container .button:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 1);
+    border-radius: 50%;
+    z-index: -99;
+}
+  
+.button-container .button:nth-child(1) {
+    float: left;
+}
+  
+.button-container .button:nth-child(2) {
+    float: right;
+} */
+
+.jumbotron{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(Assets/joinUsSectionBaner.jpeg);
+    background-size: cover;
+    flex-direction: column;
+}
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    border-bottom: 1px dashed #000;
+}
+
+.carousel-container{
+    width: 1040px;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slider{
+    display: flex;
+}
+
+.carousel-slider img{
+    min-width: 1040px;
+    max-width: 1040px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.button-container{
+    font-size: 35px;
+}
+
+.button-prev, .button-next{
+    position: absolute;
+    top: 40%;
+}
+
+.button-prev{
+    left: 10px;
+}
+
+.button-next{
+    right: 10px;
+}
+
+button{
+    font-family: "Bebas Neue";
+    font-size: 15px;
+    padding: 8px 5px;
+    background-color: transparent;
+    backdrop-filter: blur(50px);
+    color: white;
+    border: 1px solid white;
+}
+
+body{
+    background-image: url(../Assets/joinUsSectionBaner.jpeg);
+}
+
+.hero{
+    font-family: "Bebas Neue";
+    display: flex;
+}
+
+.home-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px; 
+    width: 50%;
+    position: absolute;
+    right: 0;
+    overflow: hidden;
+    animation: ngeng 3s ease 0s infinite alternate;
+}
+
+.home-desc{
+    display: flex; 
+    align-items: center; 
+    border-radius: 10px;  
+    width: 50%;
+    text-align: justify;
+}
+
+.home-desc p{
+    font-size: 30px;
+    margin-top: 1px;
+    padding-left: 70px;
+    padding-right: 75px;
+}
+
+@keyframes ngeng {
+    0%   {right: -150px;}
+    100% {right: 150px;}
+}
+
+@media only screen and (max-width: 850px) {
+    @keyframes ngeng {
+        0%   {right: -50px;}
+        50%  {right: 50px;}
+        100% {right: -50px;}
+    }
+
+    .carousel-slider img{
+        min-width: 640px;
+        max-width: 640px;
+    }
+    
+    .carousel-container{
+        width: 640px;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+    .carousel-slider img{
+        min-width: 800px;
+        max-width: 800px;
+    }
+    
+    .carousel-container{
+        width: 800px;
+    }
+}
