@@ -19,4 +19,20 @@ body{
     body {
       margin: 10px;
     }
-  }
+}
+
+.column{
+    flex-direction: column;
+    padding: 20px;
+}
+
+.images{
+    padding: 10px;
+}
+
+.paragraph{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
