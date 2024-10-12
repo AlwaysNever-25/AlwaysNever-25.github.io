@@ -10,7 +10,7 @@ $(document).ready(function(){
       });
 
     $(".portal_sliderlink-4").on("click", function() { // binding click event
-        window.location = "/fcreviews/fcreviews.html";
+        window.location = "/fcreviews";
       });
     
     $(".portal_sliderlink-5").on("click", function() { // binding click event
