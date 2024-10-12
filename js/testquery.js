@@ -6,11 +6,11 @@ $(document).ready(function(){
         window.location = "beer.html";
       });
     $(".portal_sliderlink-3").on("click", function() { // binding click event
-        window.location = "/whatisthis/notindex.html";
+        window.location = "/fcreviews";
       });
 
     $(".portal_sliderlink-4").on("click", function() { // binding click event
-        window.location = "/fcreviews";
+        window.location = "/normalreviews";
       });
     
     $(".portal_sliderlink-5").on("click", function() { // binding click event
