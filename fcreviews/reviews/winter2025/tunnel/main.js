@@ -1,70 +1,161 @@
-import * as THREE from 'three';
-import WebGL from 'three/addons/capabilities/WebGL.js';
-import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { slides } from "./data.js";
 
-if ( WebGL.isWebGL2Available() ) {
+const lenis = new Lenis();
+lenis.on("scroll", ScrollTrigger.update);
+gsap.ticker.add((time) => {
+  lenis.raf(time * 1000);
+});
+gsap.ticker.lagSmoothing(0);
 
-	const scene = new THREE.Scene();
-    const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-    camera.position.z = 30;
+const scene = new THREE.Scene();
+const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+const renderer = new THREE.WebGLRenderer({
+  canvas: document.querySelector('#bg'),
+});
+renderer.setSize(window.innerWidth, window.innerHeight);
+document.body.appendChild(renderer.domElement);
 
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize( window.innerWidth, window.innerHeight );
-    renderer.setAnimationLoop( animate );
-    document.body.appendChild( renderer.domElement );
+const geometry = new THREE.PlaneGeometry(2, 2);
+const uniforms = {
+  iTime: { value: 0 },
+  iResolution: {
+    value: new THREE.Vector2(window.innerWidth, window.innerHeight),
+  },
+  scrollOffset: { value: 0 },
+};
 
-    const geometry = new THREE.TorusGeometry( 10, 3, 16, 100);
-    const material = new THREE.MeshStandardMaterial( { color: 0xFF6347 } );
+const material = new THREE.ShaderMaterial({
+  uniforms: uniforms,
+  vertexShader: document.getElementById("vertexShader").textContent,
+  fragmentShader: document.getElementById("fragmentShader").textContent,
+})
 
-    const torus = new THREE.Mesh( geometry, material );
-    scene.add( torus );
+const mesh = new THREE.Mesh(geometry, material);
+scene.add(mesh);
 
-    const pointLight = new THREE.PointLight(0xffffff);
-    pointLight.position.set(5,5,5);
-
-    const ambientLight = new THREE.AmbientLight(0xffffff);
-    
-    scene.add(pointLight, ambientLight);
-
-    const lightHelper = new THREE.PointLightHelper(pointLight);
-    const gridHelper = new THREE.GridHelper(200, 50);
-    scene.add(lightHelper, gridHelper);
-    
-    //const geometry = new THREE.BoxGeometry( 1, 1, 1 );
-    //const material = new THREE.MeshBasicMaterial( { color: 0x00ff00 } );
-    //const cube = new THREE.Mesh( geometry, material );
-    //scene.add( cube );
-
-    const controls = new OrbitControls(camera, renderer.domElement);
-
-    function animate() {
-
-        torus.rotation.x += 0.01;
-        torus.rotation.y += 0.005;
-        torus.rotation.z += 0.01;
-
-        controls.update();
-
-        renderer.render( scene, camera );
-
-    }
-
-    function addStar(){
-        const geometry = new THREE.SphereGeometry(0.25, 24, 24);
-        const material = new THREE.MeshStandardMaterial( { color: 0xffffff } );
-        const star = new THREE.Mesh(geometry, material);
-
-        const [x,y,z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(100));
-
-        star.position.set(x, y, z);
-        scene.add(star);
-    }
-
-    Array(200).fill().forEach(addStar);
-
-} else {
-
-	const warning = WebGL.getWebGL2ErrorMessage();
-	document.getElementById( 'container' ).appendChild( warning );
-
+let lastTime = 0;
+function animateTunnel(time){
+  const deltaTime = time - lastTime;
+  lastTime = time;
+  uniforms.iTime.value += deltaTime * 0.001;
+  renderer.render(scene, camera);
+  requestAnimationFrame(animateTunnel);
 }
+
+animateTunnel(0);
+
+window.addEventListener("resize", () => {
+  const width = window.innerWidth;
+  const height = window.innerHeight;
+  renderer.setSize(width, height);
+  uniforms.iResolution.value.set(width, height);
+});
+
+gsap.registerPlugin(ScrollTrigger);
+
+const totalSlides = 10;
+const zStep = 2500;
+const initialZ = -22500;
+
+function generateSlides() {
+  const slider = document.querySelector(".slider");
+  slider.innerHTML = "";
+
+  for (let i = 1; i <= totalSlides; i++) {
+    const slide = document.createElement("div");
+    slide.className = "slide";
+    slide.id = `slide-${i}`;
+
+    if (slide.id == "slide-10"){
+      const slideImg = document.createElement("div");
+      slideImg.className = "slide-img";
+
+      const img = document.createElement("img");
+      img.src = `./assets/img${i}.jpg`;
+      img.alt = "";
+
+      slideImg.appendChild(img);
+      slide.appendChild(slideImg);
+    }
+
+    /*const slideImg = document.createElement("div");
+    slideImg.className = "slide-img";*/
+
+    /* const img = document.createElement("img");
+    img.src = `./assets/img${i}.jpg`;
+    img.alt = ""; */
+
+    const slideCopy = document.createElement("div");
+    slideCopy.className = "slide-copy";
+    slideCopy.innerHTML = `<p>${slides[i - 1].title}</p><p>${slides[i - 1].id}</p>`;
+
+    /*slideImg.appendChild(img);
+    slide.appendChild(slideImg);*/
+    slide.appendChild(slideCopy);
+    slider.appendChild(slide);
+
+    const zPosition = initialZ + (i - 1) * zStep;
+    const opacity = i === totalSlides ? 1 : i === totalSlides - 1 ? 0 : 0;
+
+    gsap.set(slide, {
+      top: "50%",
+      left: "50%",
+      xPercent: -50,
+      yPercent: -50,
+      z: zPosition,
+      opacity: opacity,
+    });
+  }
+}
+
+window.addEventListener("load", function() {
+  generateSlides();
+
+  const slides = gsap.utils.toArray(".slide");
+  
+  function getInitialTranslateZ(slide) {
+    return gsap.getProperty(slide, "z");
+  }
+
+  function mapRange(value, inMin, inMax, outMin, outMax) {
+    return (
+      ((value - inMin) * (outMax - outMin)) / (inMax - inMin) + outMin
+    )
+  }
+
+  ScrollTrigger.create({
+    trigger: ".container",
+    start: "top top",
+    end: "bottom bottom",
+    scrub: 1,
+    onUpdate: (self) => {
+      uniforms.scrollOffset.value = self.progress;
+    },
+  });
+
+  slides.forEach((slide, index) => {
+    const initialZ = getInitialTranslateZ(slide);
+
+    ScrollTrigger.create({
+      trigger: ".container",
+      start: "top top",
+      end: "bottom bottom",
+      scrub: 1,
+      onUpdate: (self) => {
+        const progress = self.progress;
+        const zIncrement = progress * 22500;
+        const currentZ = initialZ + zIncrement;
+
+        let opacity;
+        if(currentZ >= -22500) {
+          opacity = mapRange(currentZ, -2500, 0, 0, 1);
+        } else {
+          opacity = mapRange(currentZ, -5000, -2500, 0, 0);
+        }
+
+        slide.style.opacity = opacity;
+        slide.style.transform = `translateX(-50%) translateY(-50%) translateZ(${currentZ}px)`;
+      },
+    });
+  });
+});

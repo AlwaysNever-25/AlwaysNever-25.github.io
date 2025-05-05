@@ -36,8 +36,23 @@ a {
     margin: 20px;
   }
 }
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 426px) {
   body {
     margin: 10px;
+  }
+
+  .paragraph{
+    flex-flow: column wrap;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 319px){
+  body{
+    margin: 5px;
   }
 }
