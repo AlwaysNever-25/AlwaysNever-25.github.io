@@ -37,7 +37,7 @@ nav > div {
     gap: 2em;
 }
 
-.nav-items:nth-child(3) {
+.nav-items:nth-child(2) {
     justify-content: flex-end;
 }
 
@@ -108,4 +108,40 @@ blockquote p {
 
 .left {
     grid-column: 6 / 12;
+}
+
+button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+}
+
+button > span {
+    font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+}
+
+.mute-btn {
+    color: #e0e0e0;
+    background-color: rgba(0, 0, 0, 0.88);
+}
+  
+.mute-btn:hover {
+    background-color: #1a202c;
+}
+
+.icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+  }
+
+.controls {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
 }

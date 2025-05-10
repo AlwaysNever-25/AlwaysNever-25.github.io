@@ -67,7 +67,8 @@ scene.background = spaceTexture;
 
 // Avatar
 
-const posterTexture = new THREE.TextureLoader().load('/images/Puella Magi Madoka Magica.jpg');
+// const posterTexture = new THREE.TextureLoader().load('/images/Puella Magi Madoka Magica.jpg');
+const posterTexture = new THREE.TextureLoader().load('./assets/Puella Magi Madoka Magica.jpg');
 
 const poster = new THREE.Mesh(new THREE.BoxGeometry(2, 3, 0.1), new THREE.MeshBasicMaterial({ map: posterTexture }));
 
