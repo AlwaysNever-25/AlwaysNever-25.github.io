@@ -7,11 +7,11 @@ document.addEventListener('DOMContentLoaded', function() {
   
   // Create Howl instance
   const sound = new Howl({
-    src: ['./assets/Magia.webm', './assets/Magia.mp4'],
+    src: ['./assets/Sis Puella Magica!.webm', './assets/Sis Puella Magica!.m4a'],
     html5: true,
     loop: true,
     autoplay: true,
-    volume: 0.5
+    volume: 0.15
   });
   
   // Toggle mute/unmute

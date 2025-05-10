@@ -69,10 +69,50 @@ scene.background = spaceTexture;
 
 // const posterTexture = new THREE.TextureLoader().load('/images/Puella Magi Madoka Magica.jpg');
 const posterTexture = new THREE.TextureLoader().load('./assets/Puella Magi Madoka Magica.jpg');
-
 const poster = new THREE.Mesh(new THREE.BoxGeometry(2, 3, 0.1), new THREE.MeshBasicMaterial({ map: posterTexture }));
 
+const mamiTexture = new THREE.TextureLoader().load('./assets/Mami_Tomoe.jpg');
+const mami = new THREE.Mesh(new THREE.BoxGeometry(2, 3, 0.1), new THREE.MeshBasicMaterial({ map: mamiTexture }));
+
+const sakuraTexture = new THREE.TextureLoader().load('./assets/Kyoko_Sakura.jpg');
+const sakura = new THREE.Mesh(new THREE.BoxGeometry(2, 3, 0.1), new THREE.MeshBasicMaterial({ map: sakuraTexture }));
+
+const sayakaTexture = new THREE.TextureLoader().load('./assets/Sayaka_Miki.jpg');
+const sayaka = new THREE.Mesh(new THREE.BoxGeometry(2, 3, 0.1), new THREE.MeshBasicMaterial({ map: sayakaTexture }));
+
+const homuraTexture = new THREE.TextureLoader().load('./assets/Homura_Akemi.jpg');
+const homura = new THREE.Mesh(new THREE.BoxGeometry(2, 3, 0.1), new THREE.MeshBasicMaterial({ map: homuraTexture }));
+
+const madokaTexture = new THREE.TextureLoader().load('./assets/Madoka_Kaname.jpg');
+const madoka = new THREE.Mesh(new THREE.BoxGeometry(2, 3, 0.1), new THREE.MeshBasicMaterial({ map: madokaTexture }));
+
 scene.add(poster);
+poster.position.z = -3;
+poster.position.x = 2;
+
+scene.add(mami);
+mami.position.z = 59;
+mami.position.x = -2.5;
+mami.rotateY(-1.8);
+
+scene.add(sakura);
+sakura.position.z = 90;
+sakura.position.x = -1;
+sakura.rotateY(-1.2);
+
+scene.add(sayaka);
+sayaka.position.z = 108.7;
+sayaka.position.x = -1.6;
+sayaka.rotateY(-4.4);
+
+scene.add(homura);
+homura.position.z = 139.8;
+homura.position.x = -0.5;
+homura.rotateY(-3.7);
+
+scene.add(madoka);
+madoka.position.z = 164.5;
+madoka.position.x = 0.5;
 
 // Moon
 
@@ -91,9 +131,6 @@ scene.add(moon);
 
 moon.position.z = 30;
 moon.position.setX(-10);
-
-poster.position.z = -3;
-poster.position.x = 2;
 
 // Scroll Animation
 
