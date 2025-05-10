@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The Tunnel">
+    <meta property="og:image" content="/images/The_Tunnel_to_Summer,_the_Exit_of_Goodbyes.jpg">
+    <meta property="og:image:alt" content="Image of the key visual of the movie 'The Tunnel to Summer, the Exit of Goodbyes', featuring main characters Kaoru Touno and Anzu Hanashiro.">
+    <meta property="og:description" content="The review of the anime 'The Tunnel to Summer, the Exit of Goodbyes' by AlwaysNever.">
     <title>The Tunnel</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.4/howler.min.js" integrity="sha512-xi/RZRIF/S0hJ+yJJYuZ5yk6/8pCiRlEXZzoguSMl+vk2i3m6UjUO/WcZ11blRL/O+rnj94JRGwt/CHbc9+6EA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -39,7 +43,8 @@
 <body>
   <canvas id="bg"></canvas>
   <main>
-    <nav>
+    <div class="container">
+      <nav>
       <div class="nav-items">
         <a href="/fcreviews/">Back</a>
       </div>
@@ -47,14 +52,14 @@
         <a href="#">The Tunnel</a>
       </div>
       <div class="nav-items">
-        <button class="mute">Mute</button>
+        <button id="muteButton" class="mute-btn">
+          <span>Mute</span>
+        </button>
       </div>
     </nav>
     <footer>
       <p>AlwaysNever, ©2025</p>
     </footer>
-
-    <div class="container">
       <div class="overlay"></div>
       <div class="slider"></div>
     </div>

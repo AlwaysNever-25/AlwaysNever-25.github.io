@@ -71,12 +71,24 @@ function generateSlides() {
       slideImg.className = "slide-img";
 
       const img = document.createElement("img");
-      img.src = `./assets/img${i}.jpg`;
+      img.src = `./assets/img10.jpg`;
       img.alt = "";
 
       slideImg.appendChild(img);
       slide.appendChild(slideImg);
     }
+
+    // if (slide.id == "slide-1"){
+    //   const slideImg = document.createElement("div");
+    //   slideImg.className = "slide-img";
+
+    //   const img = document.createElement("img");
+    //   img.src = `./assets/img1.jpg`;
+    //   img.alt = "";
+
+    //   slideImg.appendChild(img);
+    //   slide.appendChild(slideImg);
+    // }
 
     /*const slideImg = document.createElement("div");
     slideImg.className = "slide-img";*/

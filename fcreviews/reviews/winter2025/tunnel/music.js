@@ -1,18 +1,36 @@
-const muteBtn = document.querySelector('.mute');
-const unmuteBtn = document.querySelector('.unmute');
+document.addEventListener('DOMContentLoaded', function() {
+  // Elements
+  const muteButton = document.getElementById('muteButton');
 
-var sound = new Howl({
+  // State
+  let isMuted = false;
+  
+  // Create Howl instance
+  const sound = new Howl({
     src: ['./assets/Finale.webm', './assets/Finale.m4a'],
-    autoplay: true,
+    html5: true,
     loop: true,
-    volume: 0.5,
-    onend: function() {
-        console.log('Finished!');
-      }
+    autoplay: true,
+    volume: 0.1
+  });
+  
+  // Toggle mute/unmute
+  muteButton.addEventListener('click', function() {
+    isMuted = !isMuted;
+    sound.mute(isMuted);
+    updateMuteButton();
+  });
+  
+  // Update UI based on mute state
+  function updateMuteButton() {
+    if (isMuted) {
+      muteButton.innerHTML = `
+        <span>Unmute</span>
+      `;
+    } else {
+      muteButton.innerHTML = `
+        <span>Mute</span>
+      `;
+    }
+  }
 });
-
-let id = sound.play();
-
-muteBtn.onclick = function() {
-  sound.mute(true, id);
-}
