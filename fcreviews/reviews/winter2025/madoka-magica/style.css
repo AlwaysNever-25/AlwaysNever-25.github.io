@@ -18,13 +18,13 @@ canvas {
 nav, 
 footer{
     position: fixed;
-    width: 100%;
+    width: 95%;
     padding: 2em;
     display: flex;
     justify-content: space-between;
     align-items: center;
     mix-blend-mode: exclusion;
-    z-index: 2;
+    z-index: 3;
 }
 
 nav {
@@ -123,6 +123,8 @@ button {
 
 button > span {
     font-family: "Playfair Display", Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
 }
 
 .mute-btn {
