@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+body {
+    background-color: black;
+    color: #e6e6e6;
+    margin: 50px;
+    font-family: "Kosugi Maru", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.mask1 {
+  -webkit-mask-image: url(./assets/dreams.png);
+  mask-image: url(./assets/dreams.png);
+  mask-repeat: no-repeat;    
+}
+
+.mask2{
+  -webkit-mask-image: url(./assets/friend.png);
+  mask-image: url(./assets/friend.png);
+  mask-repeat: no-repeat;    
+}
+
+a {
+    color: #e6e6e6;
+}
+
+.date{
+    text-align: right;
+    font-size: small;
+}

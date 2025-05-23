@@ -198,6 +198,21 @@ body{
   font-size: 30px;
 }
 
+.madoka-magica{
+    background: linear-gradient(90deg,rgba(255, 182, 187, 1) 0%, rgba(255, 230, 145, 1) 25%, rgba(149, 213, 238, 1) 50%, rgba(88, 88, 114, 1) 75%, rgba(158, 68, 70, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.saiki-k{
+    background: linear-gradient(90deg,rgba(252, 56, 157, 1) 0%, rgba(255, 176, 218, 1) 25%, rgba(255, 217, 237, 1) 50%, rgba(143, 255, 186, 1) 75%, rgba(33, 255, 118, 1) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .ml3 {
     font-weight: 900;
     font-size: 3.5em;
