@@ -345,3 +345,27 @@ div.portal_slide .ui-tabs-panel ul {
 	border-radius: inherit;
 }
 /* END jQuery Slider */
+
+.old-homepage{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.old-homepage button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.old-homepage button:hover {
+    background-color: #0056b3;
+}

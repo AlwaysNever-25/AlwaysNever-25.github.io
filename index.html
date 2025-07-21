@@ -35,8 +35,16 @@
             </div>
        </div>
     </div>
-    <div>
-      <a href="index2.html">Go Back to Old Homepage</a>
+    <div class="old-homepage">
+      <button>Go Back to Old Homepage</button>
     </div>
+
+    <script>
+    // Add click event listener to the button
+    document.querySelector('.old-homepage button').addEventListener('click', () => {
+    // Redirect the user to a signup page or perform some other action
+    window.location.href = '/index2.html';
+    });
+    </script>
 </body>
 </html>
