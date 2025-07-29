@@ -38,6 +38,10 @@ body{
     grid-row-end: 4;
 }
 
+.season-title-2 .small {
+    font-size: xx-small;
+}
+
 .season-inner-title {
     font-size: 30px;
     grid-column-start: 1;
