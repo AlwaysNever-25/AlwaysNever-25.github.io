@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 body {
   background-color: black;
   color: #e6e6e6;
@@ -10,25 +11,175 @@ a {
   color: #e6e6e6;
 }
 
-.date{
+.date {
   text-align: right;
   font-size: small;
 }
 
-.paragraph{
+.paragraph {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
-.column{
+.paragraph p:first-child{
+  margin-inline-end: 1em;
+}
+
+.paragraph p:nth-child(2){
+  margin-inline-start: 1em;
+}
+
+.column {
   flex-direction: column;
   padding: 20px;
 }
 
-.images{
-  padding: 10px;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.images {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+figure .images{
+  width: 100%;
+}
+
+.images:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* This ensures images fill the container while maintaining aspect ratio */
+  object-position: center;
+  /* Centers the image within the container */
+  transition: transform 0.3s ease;
+
+}
+
+.images:hover img {
+  transform: scale(1.1);
+}
+
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(5px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  max-width: 90vw;
+  max-height: 90vh;
+  transform: scale(0.8);
+  transition: transform 0.3s ease;
+}
+
+.modal-overlay.active .modal-content {
+  transform: scale(1);
+}
+
+.modal-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* Close Button */
+.close-btn {
+  position: absolute;
+  top: -15px;
+  right: -15px;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #333;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease;
+}
+
+.close-btn:hover {
+  background: #f44336;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Loading animation */
+.loading {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-top: 5px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .modal-content {
+    max-width: 95vw;
+    max-height: 95vh;
+  }
 }
 
 @media only screen and (max-width: 850px) {
@@ -36,6 +187,7 @@ a {
     margin: 20px;
   }
 }
+
 @media only screen and (max-width: 350px) {
   body {
     margin: 10px;

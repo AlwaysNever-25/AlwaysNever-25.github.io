@@ -8,7 +8,7 @@
     <meta property="og:image:alt" content="Image of the poster of the manhwa 'Webtoon Character Na Kang-Lim', featuring the main characters, Na Kang-Lim, Yoo Da-Hee, and Park Jung-ah.">
     <meta property="og:description" content="The review of the manhwa 'Webtoon Character Na Kang-Lim' by AlwaysNever.">
     <title>Webtoon Reader's Viewpoint</title>
-    <link rel="stylesheet" href="/css/review.css">
+    <link rel="stylesheet" href="index.css">
     <script type="text/javascript" src="/js/date.js"></script>
 </head>
 <body>
@@ -88,7 +88,7 @@
             <div class="paragraph">
                 <figure style="text-align: center;">
                     <div class="images">
-                    <img src="assets/Eun-sa Cute.jpg" alt="" width="100px">
+                        <img src="assets/Eun-sa Cute.jpg" alt="" width="100px">
                     </div>
                 <figcaption style="font-size: smaller;">Eun-sa, an adult. One of my personal favorite.</figcaption>
                 </figure>
@@ -98,7 +98,7 @@
             <div class="paragraph">
                 <p>Especially since we're only focusing on main heroine so far. Only non-heroine that has a spotlight up until Chapter 60 was Na-Ri, who is called a "sub-heroine" but has her moment, at least... this cute yandere-ass little sister...</p>
                 <div class="images">
-                    <img src="assets/Na-Ri yandere.jpg" alt="" width="100px">
+                    <img src="assets/Na-Ri yandere.jpg" alt="" width="100px" height="150px">
                 </div>
             </div>
 
@@ -125,6 +125,16 @@
         <p>Ratings: <b>8/10</b></p>
         <br/>
         <div class="date"></div>
-    </footer>    
+    </footer>
+    
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-content">
+            <div class="loading" id="loading"></div>
+            <img class="modal-image" id="modalImage" alt="Expanded Image">
+            <button class="close-btn" id="closeBtn">&times;</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="lightbox-modal.js"></script>
 </body>
 </html>
