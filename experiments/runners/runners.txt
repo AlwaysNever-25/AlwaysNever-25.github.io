@@ -21,13 +21,8 @@ Buttons
         name:Stepping
         desc:Click to start stepping!
         on click: anim icon wobble
-        on click:
-          if(have Energy) 
-            yield 1 Step
-          else if(Energy=0)
-            toast "Your energy is empty. Energize! first."
-          end
-        end
+        on click: if(have Energy) yield 1 Step
+        on click: if(Energy=0) toast "Your energy is empty. Energize! first."
         icon: assets/stepping.png
         no text
  
