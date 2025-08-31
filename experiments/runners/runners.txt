@@ -1,0 +1,333 @@
+Let's make a game!
+        name:Runner
+        by: AlwaysNever
+        version: 0.26
+//Refactored
+//Refactoring everything to fit with new syntax
+        created: 18/05/2014
+        updated: 31/08/2025
+  
+Settings
+        background : #0033ff
+        building cost increase: 110%
+        building cost refund: 50%
+        stylesheet: https://pastebin.com/raw/7K2vcKmx
+
+Layout
+        use default
+
+Buttons
+        *Stepping
+        name:Stepping
+        desc:Click to start stepping!
+        on click: anim icon wobble
+        on click:
+          if(have Energy) 
+            yield 1 Step
+          else if(Energy=0)
+            toast "Your energy is empty. Energize! first."
+          end
+        end
+        icon: assets/stepping.png
+        no text
+ 
+        *Energize
+        name:Energize
+        desc:Energize yourself!
+        on click:anim icon wobble
+        on click:100 AEnergy
+        icon: assets/energy.png
+        hidden when 100
+        no text
+ 
+Resources
+        *Step|Steps
+            name:Step|Steps
+            desc:These are your steps count. You can use them to purchase upgrades. Your goal is to gather as many steps as possible!
+            class:noBackground
+            show earned
+            
+        *Energy|Energies
+            name:Energy|Energies
+            show earned
+        
+        *AEnergy
+            name:Energy Restored
+            always hidden
+            start with: 100
+ 
+Buildings
+        *Somethin
+                always hidden
+                starts with: 1
+                on tick:yield 1 Energy
+                on tick:lose 1 AEnergy
+ 
+        *Shoe
+                name:Shoe|Shoes
+                desc:Shoe to make your feet comfortable. More Shoes meaning upgraded Shoes.<//><b>Effect:</b><.>Make you run <b>0.4</b> Step.
+                picture: http://s23.postimg.org/4tmfke1lz/Shoe.png
+                cost:15 Steps
+                on tick:yield 0.1 Step
+                unlocked
+ 
+        *RunnerShoe
+                name:Runner Shoe|Runner Shoes
+                desc:Make you run <b>2</b> Steps.<//><i>Shoe that designed for runners. Make you faster and comfortable. More Runner Shoes, means Upgraded Runner Shoe.</i>
+                picture: http://s25.postimg.org/4h5or2lkb/Run_Shoe.png
+                cost:200 Steps
+                on tick:yield 0.5 Steps
+                req:200 Steps
+                req:1 Shoe
+        
+        *Treadmill
+                name:Treadmill|Treadmills
+                desc:Make you run <b>10</b> Steps.<//><i>Training Treadmill that will train you to run even faster. More Treadmills = Upgraded Treadmill.</i>
+                picture: http://s25.postimg.org/5pbp0ndez/Treadmill.png
+                cost:1500 Steps
+                on tick:2 Steps
+                req:2500 Steps
+                req:1 RunnerShoe
+        
+        *Trainer
+                name:Trainer|Trainers
+                desc:Make you run <b>25</b> Steps.<//><i>Former Runners who devoted themselves to train other runners to run properly.</i>
+                picture: http://s25.postimg.org/amko80q0b/Trainers.png
+                cost:10000 Steps
+                on tick:25 Steps
+                req:10000 Steps
+                req:1 Treadmill
+
+        //*Gym
+                //name:Gym|Gyms
+                //desc:Make you run 500 Steps.
+                //costs:250000 Steps
+                //on tick:1000 Steps
+                //req:250000 Steps, 1 Trainer
+                //picture: Not available ATM
+ 
+Upgrades
+        *MuscleAdjustment
+                name:Muscle Adjustment
+                desc:Your muscle adjust after you ran a few steps.
+                cost:50 Steps
+                req:10 Steps
+                passive:multiply yield of Stepping by 150%
+                
+        *Stamina
+                name:Better Stamina
+                desc:You have run so many steps that your body has strengthen and make you durable for more run.
+                cost:100 Steps
+                req:100 Steps
+                on earn:yield 1 Somethin
+
+        *Muscle
+ 
+        *ShoeC
+                name:Cleaned Shoe
+                desc:You cleaned your shoe until you feel more confident. Shoe are <b>more</b> efficient.
+                cost:100 Steps
+                req:1 Shoe
+                passive:multiply yield of Shoe by 150%
+                
+        *EasySLC
+                name:Easy-to-tie Shoelaces
+                desc:Your shoelaces are now easier to tie. Shoe are <b>more</b> efficient.
+                cost:500 Steps
+                req:10 Shoe
+                passive:multiply yield of Shoe by 200%
+                
+        *SotR
+                name:Socks of the Runners
+                desc:On your track, you found a sock that is surprisingly clean. It gives you more comfort at wearing shoe. Shoes are <b>twice</b> as efficient.
+                cost:1000 Steps
+                req:50 Shoe
+                passive:multiply yield of Shoe by 200%
+        
+        *PreRunShoeS
+                name:Previous Runner Shoe's Owner Support
+                desc:The Spirit of the Previous Owner makes you run faster. Runner Shoe are <b>more</b> efficient.
+                cost:500 Steps
+                req:1 RunnerShoe
+                passive:multipliy yield of RunnerShoe by 150%
+
+        *RaisinM
+                name:Shoe that Raise Morale
+                desc:Your shoe giving you the Morale Boost that you need when you're down. Runner Shoe are <b>Twice</b> as efficient.
+                cost:1000 Steps
+                req:10 RunnerShoe
+                passive:multiply yield of RunnerShoe by 200%
+                
+        *BPad
+                name:Built-in Boost Pad
+                desc:Boost Pad that we usually saw at a running competition. But this Boost Pad is implemented in your Runner Shoe so you can start running quickly. Runner Shoes are <b>twice</b> as efficient
+                cost:5000 Steps
+                req:50 RunnerShoe
+                passive:multiply yield of RunnerShoe by 200%
+
+//below is a WIP Update 
+//*BMecha
+//cost 
+//unlocks at 1 Treadmill
+//multiplies efficiency of Treadmill by 150%
+//named Better Mechanism
+//"The Treadmill Mechanism became smooth. Part of the Treadmill MKI upgrade. Treadmill are <b>more</b> efficient."
+//*SUpdate
+//cost
+//unlocks at 50 Treadmill
+//multiplies efficiency of Treadmill by X%
+//named Software Update
+//"Software are now up-to-date. Part of the Treadmill MKI upgrade. Treadmill are <b>twice</b> as efficient."
+//Be reminded that i like love fantasies, so tolerate that upgrade on the bottom
+//i'm a guy, okay?
+//*Biography
+//cost
+//unlocks at X Trainer
+//multiplies efficiency of Trainer by X%
+//named Biography of a Former Champion Runner
+//"You give your Trainer this book, and his knowledge of running technique has improves. Trainers are more/twice as efficient/efficient"
+//*MissBolt
+//cost
+//unlocks at X Trainer
+//multiplies efficiency of Trainer by 300%
+//named Ms. Bolt
+//"A help. She would become your permanent trainer and gives you powerful advices on running properly. Trainers are thrice as efficient."
+//*GoingSteady
+//cost
+//unlocks at X Trainer
+//multiplies efficiency of Trainer by X%
+//named A Girlfriend
+//"You did not see this coming. But feelings are feelings, and now she is giving you intimate training, and also giving you the ultimate advice on how to run farther and not even drops a single sweat. Trainers are at a peak of efficiency."
+
+ 
+Achievements
+        *AStep
+                name:A Step
+                desc:Make a Step.<//><i>The Journey to Fit Body is just Started</i>
+                req:1 Step
+
+        *Walking
+                name:Walking
+                desc:Walk 100 Steps.<//><i>Just walkin'</i>
+                req:100 Steps
+
+        *Jogging
+                req:1000 Steps
+                name:Jogging
+                desc:Jog 1000 Steps.<//><i>Jog a little bit, eh?</i>
+
+        *42
+                name:The Answer
+                desc:-secret achievement-<//><i>The Answer to the Ultimate Question of Life, The Universe, and Everything.</i>
+                req:4242 Steps
+                hidden
+
+        *Running
+                name:Running
+                desc:Run 10000 Steps.<//><i>Running away from reality.. wait, what?</i>
+                req:10000 Steps
+
+        *AroundThePark
+                name:Around The Park
+                desc:Run 100000 Steps around the park.<//><i>'round, 'round, 'round the park, till you're down to feet</i>
+                req:100000 Steps
+
+        *Marathon
+                name:Marathon
+                desc:Run 1000000 Steps in a Marathon.<//><i>You went into the marathon competition.</i>
+                req:1000000 Steps
+
+        *MarathonWinner
+                name:Marathonner
+                desc:Run 10000000 Steps in a Marathon, and you win.<//><i>You train yourself harder and you won the Marathon Competition</i>
+                req:10000000 Steps
+
+        *MarathonSW
+                name:Marathonia
+                desc:Run 100000000 Steps in a Marathon, and you become a Seasoned Winner.<//><i>After you won, you kept went into the Marathon Competitions and kept won</i>
+                req:100000000 Steps
+
+        *MarathonV
+                name:Marath-op
+                //marathon + stop
+                desc:Run 1000000000 Steps, and your feet finally gives up.<//><i>Unfortunate things happen to you, and you can't run again for ever. But you have run so many times that you think that this is a great idea. Now you could rest and live a life.</i>
+                req:1000000000 Steps
+
+        *FirstShoe
+                name:My First Shoe
+                desc:Have a Shoe.<//><i>Where's the other shoe?</i>
+                req:1 Shoe
+
+        *Shoe1
+                name:Pair of Shoe
+                desc:Properly have a Pair of Shoes.<//><i>There you are!</i>
+                req:2 Shoe
+
+        *Shoe2
+                name:Easy-to-tie Shoelace
+                desc:Have 10 Shoes.<//><i>We take times tying our shoelaces. That's no more!</i>
+                req:10 Shoe
+
+        *Shoe3
+                name:Socks of the Runner
+                desc:Have 50 Shoes.<//><i>Socks that are used by the Runners, surprisingly soft.</i>
+                req:50 Shoe
+
+        *Shoe4
+                name:W.I.P Shoe Achievements
+                desc:Still W.I.P
+                req:100 Shoe
+ 
+
+        *FirstRunShoe
+                name:The Ultimate Runner Shoe
+                desc:Have a Runner Shoe.<//><i>Really? You only bought one? Where's the other one?!</i>
+                req:1 RunnerShoe
+
+        *RunShoe1
+                name:The Ultimate (pair) Runner Shoes
+                desc:Properly have a pair of Runner Shoes.<//><i>That's what i'm talking about!</i>
+                req:2 RunnerShoe
+
+        *RunShoe2
+                name:Comfort in Running
+                desc:Have 10 Runner Shoes.
+                req:10 RunnerShoe
+
+        *RunShoe3
+                name:Built-in Boost Pad
+                desc:Have 50 Runner Shoes.<//><i>Built ins are not always bad.</i>
+                req:50 RunnerShoe
+
+        *RunShoe4
+                name:W.I.P Runner Shoe Achievements
+                desc:Still W.I.P
+                req:100 RunnerShoe
+
+        *FirstTreadmill
+                name:E-Running
+                desc:Have a Treadmill.<//><i>Modern Invention comes with new way of running.</i>
+                req:1 Treadmill
+
+        *Treadmill1
+                name:Running Indoor
+                desc:Have 10 Treadmill.<//><i>Because Running Outdoor is a bad idead.</i>
+                req:10 Treadmill
+
+        *Treadmill2
+                name:Treadmill MKI
+                desc:Have 50 Treadmill.<//><i>Treadmill Upgraded, software are now up-to-date and some stuff added to the treadmill</i>
+                req:50 Treadmill
+ 
+
+        *FirstTrainer
+                name:Taught by The Best... or so.
+                desc:Have a Trainer.<//><i>A former runners saw your potential and determined to train you to be the best.</i>
+                req:1 Trainer
+ 
+//below is achievement that is in WIP status
+
+        //Trainer3 or Trainer4
+                //name:Ms. Bolt
+                //desc:"Have 50 Trainers.<//><i>The Queen of all Ladies Runners, beautiful woman. She actually saw your determination and wanted to train you.</i>
+                //req:50 Trainer
