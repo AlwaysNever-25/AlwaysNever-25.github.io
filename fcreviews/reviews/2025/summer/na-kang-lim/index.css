@@ -91,6 +91,7 @@ figure .images{
   visibility: hidden;
   transition: all 0.3s ease;
   z-index: 1000;
+  overflow: auto;
 }
 
 .modal-overlay.active {
@@ -103,7 +104,9 @@ figure .images{
   position: relative;
   max-width: 90vw;
   max-height: 90vh;
-  transform: scale(0.8);
+  margin: 5vh auto;
+  background: transparent;
+  padding: 20px;
   transition: transform 0.3s ease;
 }
 
@@ -113,10 +116,13 @@ figure .images{
 
 .modal-image {
   width: 100%;
-  height: 100%;
+  max-height: none;
   object-fit: contain;
   border-radius: 8px;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  cursor: zoom-in;
+  transition: transform 0.2s ease;
+  will-change: transform;
 }
 
 /* Close Button */
